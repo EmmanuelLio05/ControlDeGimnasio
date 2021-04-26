@@ -98,5 +98,20 @@
   <ItemGroup>
     <None Include="Resources\493ea17829d3f4730f05df8c80fc1a05.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\14038073941582872993-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\14038073941582872993-5121.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-user-group-icon-296-thumb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\14038073941582872993-5122.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-tools-icon-design-vector-png-image_1705775.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

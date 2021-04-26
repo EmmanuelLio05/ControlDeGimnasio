@@ -63,6 +63,36 @@ namespace ControlDeGimnasio.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _14038073941582872993_512 {
+            get {
+                object obj = ResourceManager.GetObject("14038073941582872993-512", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _14038073941582872993_5121 {
+            get {
+                object obj = ResourceManager.GetObject("14038073941582872993-5121", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _14038073941582872993_5122 {
+            get {
+                object obj = ResourceManager.GetObject("14038073941582872993-5122", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _493ea17829d3f4730f05df8c80fc1a05 {
             get {
                 object obj = ResourceManager.GetObject("493ea17829d3f4730f05df8c80fc1a05", resourceCulture);
@@ -73,9 +103,29 @@ namespace ControlDeGimnasio.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap free_user_group_icon_296_thumb {
+            get {
+                object obj = ResourceManager.GetObject("free-user-group-icon-296-thumb", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap gum_ {
             get {
                 object obj = ResourceManager.GetObject("gum-", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pngtree_tools_icon_design_vector_png_image_1705775 {
+            get {
+                object obj = ResourceManager.GetObject("pngtree-tools-icon-design-vector-png-image_1705775", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
