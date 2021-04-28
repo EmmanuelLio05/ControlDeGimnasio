@@ -34,7 +34,7 @@ namespace ControlDeGimnasio {
             // button4
             // 
             this.button4.Image = global::ControlDeGimnasio.Properties.Resources._493ea17829d3f4730f05df8c80fc1a05;
-            this.button4.Location = new System.Drawing.Point(287, 264);
+            this.button4.Location = new System.Drawing.Point(38, 33);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(191, 174);
             this.button4.TabIndex = 3;
@@ -61,7 +61,7 @@ namespace ControlDeGimnasio {
             // btnOfertas
             // 
             this.btnOfertas.Image = global::ControlDeGimnasio.Properties.Resources._14038073941582872993_5121;
-            this.btnOfertas.Location = new System.Drawing.Point(38, 33);
+            this.btnOfertas.Location = new System.Drawing.Point(287, 264);
             this.btnOfertas.Name = "btnOfertas";
             this.btnOfertas.Size = new System.Drawing.Size(191, 174);
             this.btnOfertas.TabIndex = 0;

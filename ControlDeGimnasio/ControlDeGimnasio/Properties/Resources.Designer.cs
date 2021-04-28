@@ -103,6 +103,16 @@ namespace ControlDeGimnasio.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cancel {
+            get {
+                object obj = ResourceManager.GetObject("cancel", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap free_user_group_icon_296_thumb {
             get {
                 object obj = ResourceManager.GetObject("free-user-group-icon-296-thumb", resourceCulture);
@@ -126,6 +136,16 @@ namespace ControlDeGimnasio.Properties {
         internal static System.Drawing.Bitmap pngtree_tools_icon_design_vector_png_image_1705775 {
             get {
                 object obj = ResourceManager.GetObject("pngtree-tools-icon-design-vector-png-image_1705775", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap save__v2 {
+            get {
+                object obj = ResourceManager.GetObject("save--v2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
