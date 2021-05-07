@@ -203,6 +203,7 @@ namespace ControlDeGimnasio {
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightBlue;
             this.ClientSize = new System.Drawing.Size(569, 185);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.label5);
