@@ -4,9 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Controlador
-{
-    public class Class1
-    {
+namespace ControlDeGimnasio.Modelo.Datos {
+    public class Clase {
+
     }
 }

@@ -46,42 +46,49 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmInOut.cs">
+    <Compile Include="Modelo\Datos\Aparato.cs" />
+    <Compile Include="Modelo\Datos\Clase.cs" />
+    <Compile Include="Modelo\Datos\General.cs" />
+    <Compile Include="Modelo\Datos\Socio.cs" />
+    <Compile Include="Modelo\Entidades\Aparato.cs" />
+    <Compile Include="Modelo\Entidades\Clase.cs" />
+    <Compile Include="Modelo\Entidades\Socio.cs" />
+    <Compile Include="Vista\frmInOut.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmInOut.Designer.cs">
+    <Compile Include="Vista\frmInOut.Designer.cs">
       <DependentUpon>frmInOut.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmLogin.cs">
+    <Compile Include="Vista\frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmLogin.Designer.cs">
+    <Compile Include="Vista\frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmMain.cs">
+    <Compile Include="Vista\frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmMain.Designer.cs">
+    <Compile Include="Vista\frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmRegistro.cs">
+    <Compile Include="Vista\frmRegistro.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmRegistro.Designer.cs">
+    <Compile Include="Vista\frmRegistro.Designer.cs">
       <DependentUpon>frmRegistro.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
+    <Compile Include="Controlador\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmInOut.resx">
+    <EmbeddedResource Include="Vista\frmInOut.resx">
       <DependentUpon>frmInOut.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmLogin.resx">
+    <EmbeddedResource Include="Vista\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmMain.resx">
+    <EmbeddedResource Include="Vista\frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmRegistro.resx">
+    <EmbeddedResource Include="Vista\frmRegistro.resx">
       <DependentUpon>frmRegistro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

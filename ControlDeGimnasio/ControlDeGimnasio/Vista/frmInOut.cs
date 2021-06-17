@@ -13,5 +13,9 @@ namespace ControlDeGimnasio {
         public frmInOut() {
             InitializeComponent();
         }
+
+        private void frmInOut_Load(object sender, EventArgs e) {
+
+        }
     }
 }
