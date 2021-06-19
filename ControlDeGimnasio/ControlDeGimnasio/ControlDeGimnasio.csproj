@@ -52,7 +52,21 @@
     <Compile Include="Modelo\Datos\Socio.cs" />
     <Compile Include="Modelo\Entidades\Aparato.cs" />
     <Compile Include="Modelo\Entidades\Clase.cs" />
+    <Compile Include="Modelo\Entidades\General.cs" />
     <Compile Include="Modelo\Entidades\Socio.cs" />
+    <Compile Include="Modelo\Entidades\Usuario.cs" />
+    <Compile Include="Vista\frmClase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\frmClase.Designer.cs">
+      <DependentUpon>frmClase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\frmClaseCat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\frmClaseCat.Designer.cs">
+      <DependentUpon>frmClaseCat.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vista\frmInOut.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,6 +93,12 @@
     </Compile>
     <Compile Include="Controlador\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Vista\frmClase.resx">
+      <DependentUpon>frmClase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\frmClaseCat.resx">
+      <DependentUpon>frmClaseCat.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vista\frmInOut.resx">
       <DependentUpon>frmInOut.cs</DependentUpon>
     </EmbeddedResource>
@@ -101,6 +121,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="Properties\DataSources\Program.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -143,6 +164,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

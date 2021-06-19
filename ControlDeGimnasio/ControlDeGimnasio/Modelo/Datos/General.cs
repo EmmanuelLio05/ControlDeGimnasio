@@ -14,7 +14,7 @@ namespace ControlDeGimnasio.Modelo.Datos {
 
             try {
                 sServidor = "AFRODITA";
-                sBD = "MundoDeDonas";
+                sBD = "VO2MAX_CONTROL";
                 sConnect = new SqlConnection(@"Data Source=" + sServidor + ";Initial Catalog=" + sBD + ";Persist Security Info=True;User ID=Cliente;Password=cliente12345");
             } catch (Exception ex) {
 
