@@ -69,6 +69,7 @@ namespace ControlDeGimnasio.Vista {
             this.dgvClases.Name = "dgvClases";
             this.dgvClases.Size = new System.Drawing.Size(730, 514);
             this.dgvClases.TabIndex = 2;
+            this.dgvClases.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvClases_CellContentClick);
             // 
             // frmClaseCat
             // 
@@ -78,9 +79,10 @@ namespace ControlDeGimnasio.Vista {
             this.Controls.Add(this.dgvClases);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmClaseCat";
             this.Text = "Catalogo de clases";
+            this.Load += new System.EventHandler(this.frmClaseCat_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvClases)).EndInit();
             this.ResumeLayout(false);

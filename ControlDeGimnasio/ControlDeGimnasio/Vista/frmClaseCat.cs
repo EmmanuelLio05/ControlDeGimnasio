@@ -13,5 +13,15 @@ namespace ControlDeGimnasio.Vista {
         public frmClaseCat() {
             InitializeComponent();
         }
+
+        private void frmClaseCat_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvClases_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
