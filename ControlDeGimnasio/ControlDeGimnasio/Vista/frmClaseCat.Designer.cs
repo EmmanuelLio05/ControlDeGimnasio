@@ -51,6 +51,7 @@ namespace ControlDeGimnasio.Vista {
             this.btnSalir.TabIndex = 1;
             this.btnSalir.Text = "button2";
             this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // btnGuardar
             // 
@@ -60,6 +61,7 @@ namespace ControlDeGimnasio.Vista {
             this.btnGuardar.TabIndex = 0;
             this.btnGuardar.Text = "button1";
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // dgvClases
             // 
