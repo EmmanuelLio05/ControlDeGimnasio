@@ -13,12 +13,10 @@ namespace ControlDeGimnasio.Vista {
         private Modelo.Datos.Clase oDClase = new Modelo.Datos.Clase();
         private Modelo.Entidades.Clases oEClases = new Modelo.Entidades.Clases();
 
+        #region Metodos
         public frmClaseCat() {
             InitializeComponent();
         }
-
-        #region Metodos
-
         #endregion
 
         #region Eventos
@@ -46,7 +44,6 @@ namespace ControlDeGimnasio.Vista {
             f.Accion = Modelo.Entidades.Acciones.Registrar;
             f.ShowDialog();
         }
-        #endregion
 
         private void frmClaseCat_KeyDown(object sender, KeyEventArgs e) {
             if (e.KeyCode == Keys.Escape) {
@@ -54,15 +51,7 @@ namespace ControlDeGimnasio.Vista {
                 this.Close();
             }
         }
+        #endregion
 
-        private void btnGuardar_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnSalir_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

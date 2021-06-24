@@ -61,7 +61,6 @@ namespace ControlDeGimnasio.Vista {
             this.btnSalir.TabIndex = 1;
             this.btnSalir.Text = "button2";
             this.btnSalir.UseVisualStyleBackColor = true;
-            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // btnRegistrar
             // 
@@ -94,7 +93,7 @@ namespace ControlDeGimnasio.Vista {
             this.dgvClases.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvClases.Size = new System.Drawing.Size(491, 514);
             this.dgvClases.TabIndex = 2;
-            this.dgvClases.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvClases_CellContentClick);
+            //this.dgvClases.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvClases_CellContentClick);
             // 
             // bsClase
             // 

@@ -55,7 +55,21 @@
     <Compile Include="Modelo\Entidades\Clase.cs" />
     <Compile Include="Modelo\Entidades\General.cs" />
     <Compile Include="Modelo\Entidades\Socio.cs" />
+    <Compile Include="Modelo\Entidades\TomaClase.cs" />
+    <Compile Include="Modelo\Entidades\UsaAparato.cs" />
     <Compile Include="Modelo\Entidades\Usuario.cs" />
+    <Compile Include="Vista\frmAparato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\frmAparato.Designer.cs">
+      <DependentUpon>frmAparato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\frmAparatoCat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\frmAparatoCat.Designer.cs">
+      <DependentUpon>frmAparatoCat.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vista\frmClase.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,6 +120,12 @@
     <Compile Include="Vista\frmUsuarioCat.Designer.cs">
       <DependentUpon>frmUsuarioCat.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Vista\frmAparato.resx">
+      <DependentUpon>frmAparato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\frmAparatoCat.resx">
+      <DependentUpon>frmAparatoCat.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vista\frmClase.resx">
       <DependentUpon>frmClase.cs</DependentUpon>
     </EmbeddedResource>
@@ -140,6 +160,7 @@
     <EmbeddedResource Include="Vista\frmUsuarioCat.resx">
       <DependentUpon>frmUsuarioCat.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Properties\DataSources\ControlDeGimnasio.Modelo.Entidades.Aparato.datasource" />
     <None Include="Properties\DataSources\ControlDeGimnasio.Modelo.Entidades.Clase.datasource" />
     <None Include="Properties\DataSources\Program.datasource" />
     <None Include="Properties\Settings.settings">
