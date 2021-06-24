@@ -140,6 +140,7 @@
     <EmbeddedResource Include="Vista\frmUsuarioCat.resx">
       <DependentUpon>frmUsuarioCat.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Properties\DataSources\ControlDeGimnasio.Modelo.Entidades.Clase.datasource" />
     <None Include="Properties\DataSources\Program.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
