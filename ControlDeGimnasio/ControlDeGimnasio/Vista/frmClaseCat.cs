@@ -54,5 +54,15 @@ namespace ControlDeGimnasio.Vista {
                 this.Close();
             }
         }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

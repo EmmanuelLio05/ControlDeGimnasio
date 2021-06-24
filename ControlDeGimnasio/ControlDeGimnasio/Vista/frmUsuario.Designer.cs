@@ -38,6 +38,7 @@ namespace ControlDeGimnasio.Vista
             this.ClientSize = new System.Drawing.Size(538, 317);
             this.Name = "frmUsuario";
             this.Text = "frmUsuario";
+            this.Load += new System.EventHandler(this.frmUsuario_Load);
             this.ResumeLayout(false);
 
         }
