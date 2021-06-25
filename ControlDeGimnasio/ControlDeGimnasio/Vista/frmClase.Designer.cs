@@ -32,8 +32,8 @@ namespace ControlDeGimnasio.Vista {
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnGuardar = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
+            this.btnGuardar = new System.Windows.Forms.Button();
             this.cmbEntrenador = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -107,25 +107,25 @@ namespace ControlDeGimnasio.Vista {
             this.panel1.Size = new System.Drawing.Size(45, 181);
             this.panel1.TabIndex = 0;
             // 
-            // btnGuardar
-            // 
-            this.btnGuardar.Location = new System.Drawing.Point(3, 14);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(39, 23);
-            this.btnGuardar.TabIndex = 0;
-            this.btnGuardar.Text = "button1";
-            this.btnGuardar.UseVisualStyleBackColor = true;
-            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
-            // 
             // btnSalir
             // 
+            this.btnSalir.Image = global::ControlDeGimnasio.Properties.Resources._24close;
             this.btnSalir.Location = new System.Drawing.Point(3, 56);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(39, 23);
+            this.btnSalir.Size = new System.Drawing.Size(38, 38);
             this.btnSalir.TabIndex = 1;
-            this.btnSalir.Text = "button2";
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
+            // btnGuardar
+            // 
+            this.btnGuardar.Image = global::ControlDeGimnasio.Properties.Resources._30floppydisk;
+            this.btnGuardar.Location = new System.Drawing.Point(3, 14);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(38, 38);
+            this.btnGuardar.TabIndex = 0;
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // cmbEntrenador
             // 
@@ -151,7 +151,7 @@ namespace ControlDeGimnasio.Vista {
             this.Controls.Add(this.txtNombre);
             this.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.KeyPreview = true;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmClase";
             this.Text = "Clase";
             this.Load += new System.EventHandler(this.frmClase_Load);

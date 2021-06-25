@@ -60,38 +60,40 @@ namespace ControlDeGimnasio {
             this.btnSalir});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(63, 330);
+            this.toolStrip1.Size = new System.Drawing.Size(52, 330);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
             // btnGuardar
             // 
             this.btnGuardar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btnGuardar.Image = global::ControlDeGimnasio.Properties.Resources.save__v2;
+            this.btnGuardar.Image = global::ControlDeGimnasio.Properties.Resources._30floppydisk;
+            this.btnGuardar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.btnGuardar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(61, 20);
+            this.btnGuardar.Size = new System.Drawing.Size(50, 34);
             this.btnGuardar.Text = "toolStripButton1";
             this.btnGuardar.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(61, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(50, 6);
             // 
             // btnSalir
             // 
             this.btnSalir.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btnSalir.Image = global::ControlDeGimnasio.Properties.Resources.cancel;
+            this.btnSalir.Image = global::ControlDeGimnasio.Properties.Resources._24close;
+            this.btnSalir.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.btnSalir.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(61, 20);
+            this.btnSalir.Size = new System.Drawing.Size(50, 34);
             this.btnSalir.Text = "toolStripButton3";
             this.btnSalir.Click += new System.EventHandler(this.toolStripButton3_Click);
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(259, 30);
+            this.txtNombre.Location = new System.Drawing.Point(246, 30);
             this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(179, 26);
@@ -99,7 +101,7 @@ namespace ControlDeGimnasio {
             // 
             // txtPaterno
             // 
-            this.txtPaterno.Location = new System.Drawing.Point(74, 83);
+            this.txtPaterno.Location = new System.Drawing.Point(61, 83);
             this.txtPaterno.Margin = new System.Windows.Forms.Padding(4);
             this.txtPaterno.Name = "txtPaterno";
             this.txtPaterno.Size = new System.Drawing.Size(179, 26);
@@ -107,7 +109,7 @@ namespace ControlDeGimnasio {
             // 
             // txtTelefono
             // 
-            this.txtTelefono.Location = new System.Drawing.Point(74, 135);
+            this.txtTelefono.Location = new System.Drawing.Point(61, 135);
             this.txtTelefono.Margin = new System.Windows.Forms.Padding(4);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(179, 26);
@@ -116,7 +118,7 @@ namespace ControlDeGimnasio {
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(259, 9);
+            this.label1.Location = new System.Drawing.Point(246, 9);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(66, 18);
@@ -126,7 +128,7 @@ namespace ControlDeGimnasio {
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(74, 61);
+            this.label2.Location = new System.Drawing.Point(61, 61);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(64, 18);
@@ -136,7 +138,7 @@ namespace ControlDeGimnasio {
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(74, 113);
+            this.label3.Location = new System.Drawing.Point(61, 113);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(70, 18);
@@ -146,7 +148,7 @@ namespace ControlDeGimnasio {
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(74, 165);
+            this.label4.Location = new System.Drawing.Point(61, 165);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(66, 18);
@@ -155,7 +157,7 @@ namespace ControlDeGimnasio {
             // 
             // txtDireccion
             // 
-            this.txtDireccion.Location = new System.Drawing.Point(74, 187);
+            this.txtDireccion.Location = new System.Drawing.Point(61, 187);
             this.txtDireccion.Margin = new System.Windows.Forms.Padding(4);
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(364, 26);
@@ -165,7 +167,7 @@ namespace ControlDeGimnasio {
             // 
             this.dtpFechaRegistro.Enabled = false;
             this.dtpFechaRegistro.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFechaRegistro.Location = new System.Drawing.Point(74, 291);
+            this.dtpFechaRegistro.Location = new System.Drawing.Point(61, 291);
             this.dtpFechaRegistro.Margin = new System.Windows.Forms.Padding(4);
             this.dtpFechaRegistro.Name = "dtpFechaRegistro";
             this.dtpFechaRegistro.Size = new System.Drawing.Size(179, 26);
@@ -174,7 +176,7 @@ namespace ControlDeGimnasio {
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(74, 269);
+            this.label5.Location = new System.Drawing.Point(61, 269);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(114, 18);
@@ -184,7 +186,7 @@ namespace ControlDeGimnasio {
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(259, 58);
+            this.label6.Location = new System.Drawing.Point(246, 58);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(61, 18);
@@ -193,7 +195,7 @@ namespace ControlDeGimnasio {
             // 
             // txtMaterno
             // 
-            this.txtMaterno.Location = new System.Drawing.Point(259, 80);
+            this.txtMaterno.Location = new System.Drawing.Point(246, 80);
             this.txtMaterno.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaterno.Name = "txtMaterno";
             this.txtMaterno.Size = new System.Drawing.Size(179, 26);
@@ -202,7 +204,7 @@ namespace ControlDeGimnasio {
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(74, 9);
+            this.label7.Location = new System.Drawing.Point(61, 9);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(59, 18);
@@ -212,7 +214,7 @@ namespace ControlDeGimnasio {
             // txtNumero
             // 
             this.txtNumero.Enabled = false;
-            this.txtNumero.Location = new System.Drawing.Point(74, 31);
+            this.txtNumero.Location = new System.Drawing.Point(61, 31);
             this.txtNumero.Margin = new System.Windows.Forms.Padding(4);
             this.txtNumero.Name = "txtNumero";
             this.txtNumero.Size = new System.Drawing.Size(179, 26);
@@ -221,7 +223,7 @@ namespace ControlDeGimnasio {
             // chkInscrito
             // 
             this.chkInscrito.AutoSize = true;
-            this.chkInscrito.Location = new System.Drawing.Point(259, 241);
+            this.chkInscrito.Location = new System.Drawing.Point(246, 241);
             this.chkInscrito.Name = "chkInscrito";
             this.chkInscrito.Size = new System.Drawing.Size(151, 22);
             this.chkInscrito.TabIndex = 15;
@@ -230,7 +232,7 @@ namespace ControlDeGimnasio {
             // 
             // txtMonto
             // 
-            this.txtMonto.Location = new System.Drawing.Point(74, 239);
+            this.txtMonto.Location = new System.Drawing.Point(61, 239);
             this.txtMonto.Margin = new System.Windows.Forms.Padding(4);
             this.txtMonto.Name = "txtMonto";
             this.txtMonto.Size = new System.Drawing.Size(179, 26);
@@ -240,7 +242,7 @@ namespace ControlDeGimnasio {
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(74, 217);
+            this.label8.Location = new System.Drawing.Point(61, 217);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(56, 18);
@@ -252,7 +254,7 @@ namespace ControlDeGimnasio {
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightBlue;
-            this.ClientSize = new System.Drawing.Size(439, 330);
+            this.ClientSize = new System.Drawing.Size(429, 330);
             this.Controls.Add(this.txtMonto);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.chkInscrito);

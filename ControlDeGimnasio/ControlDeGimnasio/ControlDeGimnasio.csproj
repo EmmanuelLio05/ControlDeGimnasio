@@ -50,6 +50,8 @@
     <Compile Include="Modelo\Datos\Clase.cs" />
     <Compile Include="Modelo\Datos\General.cs" />
     <Compile Include="Modelo\Datos\Socio.cs" />
+    <Compile Include="Modelo\Datos\TomaClase.cs" />
+    <Compile Include="Modelo\Datos\UsaAparato.cs" />
     <Compile Include="Modelo\Datos\Usuario.cs" />
     <Compile Include="Modelo\Entidades\Aparato.cs" />
     <Compile Include="Modelo\Entidades\Clase.cs" />
@@ -208,6 +210,24 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\30floppydisk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\24close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\30plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\30pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\30login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\150login.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

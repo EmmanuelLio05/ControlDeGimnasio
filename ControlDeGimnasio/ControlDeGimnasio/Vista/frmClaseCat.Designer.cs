@@ -27,15 +27,15 @@ namespace ControlDeGimnasio.Vista {
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnActulizar = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.dgvClases = new System.Windows.Forms.DataGridView();
-            this.bsClase = new System.Windows.Forms.BindingSource(this.components);
             this.descripcionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.horaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.entrenadorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnActulizar = new System.Windows.Forms.Button();
+            this.bsClase = new System.Windows.Forms.BindingSource(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClases)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsClase)).BeginInit();
@@ -53,22 +53,32 @@ namespace ControlDeGimnasio.Vista {
             this.panel1.Size = new System.Drawing.Size(45, 514);
             this.panel1.TabIndex = 1;
             // 
+            // btnActulizar
+            // 
+            this.btnActulizar.Image = global::ControlDeGimnasio.Properties.Resources._30pencil;
+            this.btnActulizar.Location = new System.Drawing.Point(3, 54);
+            this.btnActulizar.Name = "btnActulizar";
+            this.btnActulizar.Size = new System.Drawing.Size(38, 38);
+            this.btnActulizar.TabIndex = 2;
+            this.btnActulizar.UseVisualStyleBackColor = true;
+            this.btnActulizar.Click += new System.EventHandler(this.btnActulizar_Click);
+            // 
             // btnSalir
             // 
+            this.btnSalir.Image = global::ControlDeGimnasio.Properties.Resources._24close;
             this.btnSalir.Location = new System.Drawing.Point(3, 94);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(39, 23);
+            this.btnSalir.Size = new System.Drawing.Size(38, 38);
             this.btnSalir.TabIndex = 1;
-            this.btnSalir.Text = "button2";
             this.btnSalir.UseVisualStyleBackColor = true;
             // 
             // btnRegistrar
             // 
+            this.btnRegistrar.Image = global::ControlDeGimnasio.Properties.Resources._30plus;
             this.btnRegistrar.Location = new System.Drawing.Point(3, 14);
             this.btnRegistrar.Name = "btnRegistrar";
-            this.btnRegistrar.Size = new System.Drawing.Size(39, 23);
+            this.btnRegistrar.Size = new System.Drawing.Size(38, 38);
             this.btnRegistrar.TabIndex = 0;
-            this.btnRegistrar.Text = "button1";
             this.btnRegistrar.UseVisualStyleBackColor = true;
             this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
@@ -93,11 +103,6 @@ namespace ControlDeGimnasio.Vista {
             this.dgvClases.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvClases.Size = new System.Drawing.Size(491, 514);
             this.dgvClases.TabIndex = 2;
-            //this.dgvClases.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvClases_CellContentClick);
-            // 
-            // bsClase
-            // 
-            this.bsClase.DataSource = typeof(ControlDeGimnasio.Modelo.Entidades.Clase);
             // 
             // descripcionDataGridViewTextBoxColumn
             // 
@@ -123,15 +128,9 @@ namespace ControlDeGimnasio.Vista {
             this.entrenadorDataGridViewTextBoxColumn.HeaderText = "Entrenador";
             this.entrenadorDataGridViewTextBoxColumn.Name = "entrenadorDataGridViewTextBoxColumn";
             // 
-            // btnActulizar
+            // bsClase
             // 
-            this.btnActulizar.Location = new System.Drawing.Point(3, 53);
-            this.btnActulizar.Name = "btnActulizar";
-            this.btnActulizar.Size = new System.Drawing.Size(39, 23);
-            this.btnActulizar.TabIndex = 2;
-            this.btnActulizar.Text = "button2";
-            this.btnActulizar.UseVisualStyleBackColor = true;
-            this.btnActulizar.Click += new System.EventHandler(this.btnActulizar_Click);
+            this.bsClase.DataSource = typeof(ControlDeGimnasio.Modelo.Entidades.Clase);
             // 
             // frmClaseCat
             // 
@@ -142,7 +141,7 @@ namespace ControlDeGimnasio.Vista {
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.KeyPreview = true;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmClaseCat";
             this.Text = "Catalogo de clases";
             this.Load += new System.EventHandler(this.frmClaseCat_Load);

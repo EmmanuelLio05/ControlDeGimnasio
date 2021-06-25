@@ -37,7 +37,7 @@ namespace ControlDeGimnasio {
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(188, 12);
+            this.label1.Location = new System.Drawing.Point(170, 12);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(51, 15);
             this.label1.TabIndex = 0;
@@ -47,7 +47,7 @@ namespace ControlDeGimnasio {
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(188, 72);
+            this.label2.Location = new System.Drawing.Point(170, 66);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(70, 15);
             this.label2.TabIndex = 1;
@@ -56,7 +56,7 @@ namespace ControlDeGimnasio {
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(188, 38);
+            this.textBox1.Location = new System.Drawing.Point(170, 35);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(159, 23);
             this.textBox1.TabIndex = 2;
@@ -64,7 +64,7 @@ namespace ControlDeGimnasio {
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(188, 98);
+            this.textBox2.Location = new System.Drawing.Point(170, 89);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(159, 23);
             this.textBox2.TabIndex = 3;
@@ -72,11 +72,11 @@ namespace ControlDeGimnasio {
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(230, 132);
+            this.button1.Image = global::ControlDeGimnasio.Properties.Resources._30login;
+            this.button1.Location = new System.Drawing.Point(230, 120);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(38, 38);
             this.button1.TabIndex = 4;
-            this.button1.Text = "Iniciar Sesion";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -94,7 +94,7 @@ namespace ControlDeGimnasio {
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightBlue;
-            this.ClientSize = new System.Drawing.Size(366, 164);
+            this.ClientSize = new System.Drawing.Size(337, 164);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox2);

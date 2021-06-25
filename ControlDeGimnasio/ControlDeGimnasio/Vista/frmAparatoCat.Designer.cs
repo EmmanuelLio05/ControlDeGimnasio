@@ -27,17 +27,17 @@ namespace ControlDeGimnasio.Vista {
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvAparatos = new System.Windows.Forms.DataGridView();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnSalir = new System.Windows.Forms.Button();
             this.estadoDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.descripcionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bsAparato = new System.Windows.Forms.BindingSource(this.components);
-            this.panel1 = new System.Windows.Forms.Panel();
             this.btnActulizar = new System.Windows.Forms.Button();
-            this.btnSalir = new System.Windows.Forms.Button();
             this.btnRegistrar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAparatos)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bsAparato)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bsAparato)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvAparatos
@@ -54,13 +54,37 @@ namespace ControlDeGimnasio.Vista {
             this.idDataGridViewTextBoxColumn});
             this.dgvAparatos.DataSource = this.bsAparato;
             this.dgvAparatos.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvAparatos.Location = new System.Drawing.Point(60, 0);
+            this.dgvAparatos.Location = new System.Drawing.Point(52, 0);
             this.dgvAparatos.Margin = new System.Windows.Forms.Padding(4);
             this.dgvAparatos.MultiSelect = false;
             this.dgvAparatos.Name = "dgvAparatos";
             this.dgvAparatos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvAparatos.Size = new System.Drawing.Size(368, 599);
+            this.dgvAparatos.Size = new System.Drawing.Size(376, 599);
             this.dgvAparatos.TabIndex = 4;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.panel1.Controls.Add(this.btnActulizar);
+            this.panel1.Controls.Add(this.btnSalir);
+            this.panel1.Controls.Add(this.btnRegistrar);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(52, 599);
+            this.panel1.TabIndex = 3;
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.Image = global::ControlDeGimnasio.Properties.Resources._24close;
+            this.btnSalir.Location = new System.Drawing.Point(4, 130);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(38, 38);
+            this.btnSalir.TabIndex = 1;
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // estadoDataGridViewCheckBoxColumn
             // 
@@ -84,49 +108,25 @@ namespace ControlDeGimnasio.Vista {
             // 
             this.bsAparato.DataSource = typeof(ControlDeGimnasio.Modelo.Entidades.Aparato);
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.panel1.Controls.Add(this.btnActulizar);
-            this.panel1.Controls.Add(this.btnSalir);
-            this.panel1.Controls.Add(this.btnRegistrar);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(60, 599);
-            this.panel1.TabIndex = 3;
-            // 
             // btnActulizar
             // 
+            this.btnActulizar.Image = global::ControlDeGimnasio.Properties.Resources._30pencil;
             this.btnActulizar.Location = new System.Drawing.Point(4, 73);
             this.btnActulizar.Margin = new System.Windows.Forms.Padding(4);
             this.btnActulizar.Name = "btnActulizar";
-            this.btnActulizar.Size = new System.Drawing.Size(52, 32);
+            this.btnActulizar.Size = new System.Drawing.Size(38, 38);
             this.btnActulizar.TabIndex = 2;
-            this.btnActulizar.Text = "button2";
             this.btnActulizar.UseVisualStyleBackColor = true;
             this.btnActulizar.Click += new System.EventHandler(this.btnActulizar_Click);
             // 
-            // btnSalir
-            // 
-            this.btnSalir.Location = new System.Drawing.Point(4, 130);
-            this.btnSalir.Margin = new System.Windows.Forms.Padding(4);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(52, 32);
-            this.btnSalir.TabIndex = 1;
-            this.btnSalir.Text = "button2";
-            this.btnSalir.UseVisualStyleBackColor = true;
-            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
-            // 
             // btnRegistrar
             // 
+            this.btnRegistrar.Image = global::ControlDeGimnasio.Properties.Resources._30plus;
             this.btnRegistrar.Location = new System.Drawing.Point(4, 19);
             this.btnRegistrar.Margin = new System.Windows.Forms.Padding(4);
             this.btnRegistrar.Name = "btnRegistrar";
-            this.btnRegistrar.Size = new System.Drawing.Size(52, 32);
+            this.btnRegistrar.Size = new System.Drawing.Size(38, 38);
             this.btnRegistrar.TabIndex = 0;
-            this.btnRegistrar.Text = "button1";
             this.btnRegistrar.UseVisualStyleBackColor = true;
             this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
@@ -144,8 +144,8 @@ namespace ControlDeGimnasio.Vista {
             this.Load += new System.EventHandler(this.frmAparatoCat_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmAparatoCat_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.dgvAparatos)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bsAparato)).EndInit();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.bsAparato)).EndInit();
             this.ResumeLayout(false);
 
         }

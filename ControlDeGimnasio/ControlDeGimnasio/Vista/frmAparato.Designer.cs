@@ -25,13 +25,13 @@ namespace ControlDeGimnasio.Vista {
         /// </summary>
         private void InitializeComponent() {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnSalir = new System.Windows.Forms.Button();
-            this.btnGuardar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtClave = new System.Windows.Forms.TextBox();
             this.txtAparato = new System.Windows.Forms.TextBox();
             this.chkEstado = new System.Windows.Forms.CheckBox();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.btnGuardar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -43,33 +43,13 @@ namespace ControlDeGimnasio.Vista {
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(45, 154);
+            this.panel1.Size = new System.Drawing.Size(48, 154);
             this.panel1.TabIndex = 1;
-            // 
-            // btnSalir
-            // 
-            this.btnSalir.Location = new System.Drawing.Point(3, 56);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(39, 23);
-            this.btnSalir.TabIndex = 1;
-            this.btnSalir.Text = "button2";
-            this.btnSalir.UseVisualStyleBackColor = true;
-            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
-            // 
-            // btnGuardar
-            // 
-            this.btnGuardar.Location = new System.Drawing.Point(3, 14);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(39, 23);
-            this.btnGuardar.TabIndex = 0;
-            this.btnGuardar.Text = "button1";
-            this.btnGuardar.UseVisualStyleBackColor = true;
-            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(51, 9);
+            this.label1.Location = new System.Drawing.Point(58, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(42, 18);
             this.label1.TabIndex = 2;
@@ -78,7 +58,7 @@ namespace ControlDeGimnasio.Vista {
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(51, 67);
+            this.label2.Location = new System.Drawing.Point(58, 67);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(57, 18);
             this.label2.TabIndex = 3;
@@ -87,22 +67,22 @@ namespace ControlDeGimnasio.Vista {
             // txtClave
             // 
             this.txtClave.Enabled = false;
-            this.txtClave.Location = new System.Drawing.Point(51, 34);
+            this.txtClave.Location = new System.Drawing.Point(58, 34);
             this.txtClave.Name = "txtClave";
-            this.txtClave.Size = new System.Drawing.Size(161, 26);
+            this.txtClave.Size = new System.Drawing.Size(166, 26);
             this.txtClave.TabIndex = 5;
             // 
             // txtAparato
             // 
-            this.txtAparato.Location = new System.Drawing.Point(51, 92);
+            this.txtAparato.Location = new System.Drawing.Point(58, 92);
             this.txtAparato.Name = "txtAparato";
-            this.txtAparato.Size = new System.Drawing.Size(158, 26);
+            this.txtAparato.Size = new System.Drawing.Size(166, 26);
             this.txtAparato.TabIndex = 6;
             // 
             // chkEstado
             // 
             this.chkEstado.AutoSize = true;
-            this.chkEstado.Location = new System.Drawing.Point(51, 125);
+            this.chkEstado.Location = new System.Drawing.Point(58, 125);
             this.chkEstado.Name = "chkEstado";
             this.chkEstado.Size = new System.Drawing.Size(68, 22);
             this.chkEstado.TabIndex = 7;
@@ -110,11 +90,31 @@ namespace ControlDeGimnasio.Vista {
             this.chkEstado.UseVisualStyleBackColor = true;
             this.chkEstado.CheckedChanged += new System.EventHandler(this.chkEstado_CheckedChanged);
             // 
+            // btnSalir
+            // 
+            this.btnSalir.Image = global::ControlDeGimnasio.Properties.Resources._24close;
+            this.btnSalir.Location = new System.Drawing.Point(3, 56);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(39, 36);
+            this.btnSalir.TabIndex = 1;
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
+            // btnGuardar
+            // 
+            this.btnGuardar.Image = global::ControlDeGimnasio.Properties.Resources._30floppydisk;
+            this.btnGuardar.Location = new System.Drawing.Point(3, 14);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(38, 38);
+            this.btnGuardar.TabIndex = 0;
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            // 
             // frmAparato
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(223, 154);
+            this.ClientSize = new System.Drawing.Size(236, 154);
             this.Controls.Add(this.chkEstado);
             this.Controls.Add(this.txtAparato);
             this.Controls.Add(this.txtClave);
