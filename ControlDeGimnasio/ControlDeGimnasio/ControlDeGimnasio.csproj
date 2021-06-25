@@ -100,11 +100,11 @@
     <Compile Include="Vista\frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\frmRegistro.cs">
+    <Compile Include="Vista\frmSocio.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\frmRegistro.Designer.cs">
-      <DependentUpon>frmRegistro.cs</DependentUpon>
+    <Compile Include="Vista\frmSocio.Designer.cs">
+      <DependentUpon>frmSocio.cs</DependentUpon>
     </Compile>
     <Compile Include="Controlador\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -141,8 +141,8 @@
     <EmbeddedResource Include="Vista\frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\frmRegistro.resx">
-      <DependentUpon>frmRegistro.cs</DependentUpon>
+    <EmbeddedResource Include="Vista\frmSocio.resx">
+      <DependentUpon>frmSocio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

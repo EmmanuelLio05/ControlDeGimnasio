@@ -18,6 +18,8 @@ namespace ControlDeGimnasio.Modelo.Datos {
                     oComm.CommandType = CommandType.StoredProcedure;
                     oComm.Parameters.AddWithValue("@Numero_S", oSocio.Id);
                     oComm.Parameters.AddWithValue("@Nombre_S", oSocio.Nombre);
+                    oComm.Parameters.AddWithValue("@Paterno_S", oSocio.Materno);
+                    oComm.Parameters.AddWithValue("@Materno_S", oSocio.Paterno);
                     //oComm.Parameters.AddWithValue("@Imagen_S", oSocio.S);
                     oComm.Parameters.AddWithValue("@Direccion_S", oSocio.Direccion);
                     oComm.Parameters.AddWithValue("@Telefono_S", oSocio.Telefono);
@@ -40,6 +42,8 @@ namespace ControlDeGimnasio.Modelo.Datos {
                     oComm.CommandType = CommandType.StoredProcedure;
                     oComm.Parameters.AddWithValue("@Numero_S", oSocio.Id);
                     oComm.Parameters.AddWithValue("@Nombre_S", oSocio.Nombre);
+                    oComm.Parameters.AddWithValue("@Paterno_S", oSocio.Materno);
+                    oComm.Parameters.AddWithValue("@Materno_S", oSocio.Paterno);
                     //oComm.Parameters.AddWithValue("@Imagen_S", oSocio.S);
                     oComm.Parameters.AddWithValue("@Direccion_S", oSocio.Direccion);
                     oComm.Parameters.AddWithValue("@Telefono_S", oSocio.Telefono);
@@ -152,6 +156,8 @@ namespace ControlDeGimnasio.Modelo.Datos {
         private void LlenaEntidad(ref Entidades.Socio oSocio, SqlDataReader drSocio) {
             oSocio.Id = Convert.IsDBNull(drSocio["Numero_S"]) ? 0 : Convert.ToInt32(drSocio["Numero_S"]);
             oSocio.Nombre = Convert.IsDBNull(drSocio["Nombre_S"]) ? "" : Convert.ToString(drSocio["Nombre_S"]).Trim();
+            oSocio.Paterno = Convert.IsDBNull(drSocio["Paterno_S"]) ? "" : Convert.ToString(drSocio["Paterno_S"]).Trim();
+            oSocio.Materno = Convert.IsDBNull(drSocio["Materno_S"]) ? "" : Convert.ToString(drSocio["Materno_S"]).Trim();
             //oSocio.S = Convert.IsDBNull(drSocio["Imagen_S"]) ? ERROR : Convert.ToERROR(drSocio["Imagen_S"]);
             oSocio.Direccion = Convert.IsDBNull(drSocio["Direccion_S"]) ? "" : Convert.ToString(drSocio["Direccion_S"]).Trim();
             oSocio.Telefono = Convert.IsDBNull(drSocio["Telefono_S"]) ? "" : Convert.ToString(drSocio["Telefono_S"]).Trim();

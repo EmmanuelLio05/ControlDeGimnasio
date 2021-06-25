@@ -7,6 +7,8 @@ namespace ControlDeGimnasio.Modelo.Entidades {
         #region Atributos
         private int _Numero;
         private string _Nombre;
+        private string _Paterno;
+        private string _Materno;
         private string _Direccion;
         private string _Telefono;
         private DateTime _FechaInscripcion;
@@ -41,6 +43,16 @@ namespace ControlDeGimnasio.Modelo.Entidades {
             set { _Direccion = value; }
         }
 
+        public String Materno {
+            get { return _Materno; }
+            set { _Materno = value; }
+        }
+
+        public String Paterno {
+            get { return _Paterno; }
+            set { _Paterno = value; }
+        }
+
         public String Nombre {
             get { return _Nombre; }
             set { _Nombre = value; }
@@ -56,6 +68,8 @@ namespace ControlDeGimnasio.Modelo.Entidades {
         public Socio() {
             _Numero = 0;
             _Nombre= "";
+            _Materno = "";
+            _Paterno = "";
             _Direccion = "";
             _Telefono= "";
             _FechaInscripcion = new DateTime(1900,1,1);

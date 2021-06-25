@@ -79,13 +79,13 @@ namespace ControlDeGimnasio.Vista {
         }
 
         private void CargarCombos() {
-            //Modelo.Datos.Usuario oDUsuario = new Modelo.Datos.Usuario();
-            //Modelo.Entidades.Usuarios oEUsuarios = new Modelo.Entidades.Usuarios();
+            Modelo.Datos.Usuario oDUsuario = new Modelo.Datos.Usuario();
+            Modelo.Entidades.Usuarios oEUsuarios = new Modelo.Entidades.Usuarios();
 
-            //oEUsuarios = oDUsuario.getAll();
-            //cmbEntrenador.DataSource = oEUsuarios;
-            //cmbEntrenador.DisplayMember = "Nombre";
-            //cmbEntrenador.ValueMember = "ID";
+            oEUsuarios = oDUsuario.GetAll();
+            cmbEntrenador.DataSource = oEUsuarios;
+            cmbEntrenador.DisplayMember = "Nombre";
+            cmbEntrenador.ValueMember = "ID";
         }
         #endregion
 
