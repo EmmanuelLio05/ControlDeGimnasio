@@ -164,6 +164,7 @@
     </EmbeddedResource>
     <None Include="Properties\DataSources\ControlDeGimnasio.Modelo.Entidades.Aparato.datasource" />
     <None Include="Properties\DataSources\ControlDeGimnasio.Modelo.Entidades.Clase.datasource" />
+    <None Include="Properties\DataSources\ControlDeGimnasio.Modelo.Entidades.Usuario.datasource" />
     <None Include="Properties\DataSources\Program.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

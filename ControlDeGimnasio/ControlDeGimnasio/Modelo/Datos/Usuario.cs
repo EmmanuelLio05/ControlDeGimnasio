@@ -17,7 +17,7 @@ namespace ControlDeGimnasio.Modelo.Datos {
                 using (var oComm = new SqlCommand()) {
                     oComm.CommandType = CommandType.StoredProcedure;
                     oComm.CommandText = "Usuario_Insert";
-                    //oComm.Parameters.AddWithValue("@nID", oUsuario.ID);   --Es autoincrementable
+                    oComm.Parameters.AddWithValue("@nID", oUsuario.ID);   
                     oComm.Parameters.AddWithValue("@Nombre_U", oUsuario.Nombre);
                     oComm.Parameters.AddWithValue("@Contraseña_U", oUsuario.Contraseña);
                     oComm.Parameters.AddWithValue("@Profesion_U", oUsuario.Profesion);
@@ -37,7 +37,7 @@ namespace ControlDeGimnasio.Modelo.Datos {
                     oComm.Connection = oCon;
                     oComm.CommandText = "Usuario_Update";
                     oComm.CommandType = CommandType.StoredProcedure;
-                    //oComm.Parameters.AddWithValue("@nID", oUsuario.ID); --Es autoincrementable
+                    oComm.Parameters.AddWithValue("@nID", oUsuario.ID); 
                     oComm.Parameters.AddWithValue("@Nombre_U", oUsuario.Nombre);
                     oComm.Parameters.AddWithValue("@Contraseña_U", oUsuario.Contraseña);
                     oComm.Parameters.AddWithValue("@Profesion_U", oUsuario.Profesion);
@@ -48,8 +48,8 @@ namespace ControlDeGimnasio.Modelo.Datos {
             }
         }
 
-        //Nombre_U o nID ????
-        public void Delete(String Nombre_U) {
+        //nID 
+        public void Delete(int nID) {
             var oEGeneral = new General();
 
             using (var oCon = oEGeneral.Conectar()) {
@@ -58,14 +58,14 @@ namespace ControlDeGimnasio.Modelo.Datos {
                     oComm.Connection = oCon;
                     oComm.CommandText = "Usuario_Disable";
                     oComm.CommandType = CommandType.StoredProcedure;
-                    oComm.Parameters.AddWithValue("@Nombre_U", Nombre_U);
+                    oComm.Parameters.AddWithValue("@nID", nID);
                     oComm.ExecuteScalar();
                 }
             }
         }
 
-        //Nombre_U o nID ????
-        public bool Verificar(String Nombre_U) {
+        //nID 
+        public bool Verificar(int nID) {
             var oEGeneral = new General();
 
             using (var oCon = oEGeneral.Conectar()) {
@@ -74,14 +74,14 @@ namespace ControlDeGimnasio.Modelo.Datos {
                     oComm.Connection = oCon;
                     oComm.CommandText = "Usuarios_SelectOne";
                     oComm.CommandType = CommandType.StoredProcedure;
-                    oComm.Parameters.AddWithValue("@Nombre_U", Nombre_U);
+                    oComm.Parameters.AddWithValue("@nID", nID);
                     return oComm.ExecuteReader().HasRows;
                 }
             }
         }
 
-        //Nombre_U o nID ????
-        public Entidades.Usuario GetOne(String Nombre_U) {
+        //nID 
+        public Entidades.Usuario GetOne(int nID) {
             var oEGeneral = new General();
             SqlDataReader drUsuario;
             Entidades.Usuario oUsuario = new Entidades.Usuario();
@@ -92,7 +92,7 @@ namespace ControlDeGimnasio.Modelo.Datos {
                     oComm.Connection = oCon;
                     oComm.CommandText = "Usuarios_SelectOne";
                     oComm.CommandType = CommandType.StoredProcedure;
-                    oComm.Parameters.AddWithValue("@Nombre_U", Nombre_U);
+                    oComm.Parameters.AddWithValue("@nID", nID);
                     drUsuario = oComm.ExecuteReader();
                     if (drUsuario.Read()) {
                         LlenaEntidad(ref oUsuario, drUsuario);
@@ -150,7 +150,7 @@ namespace ControlDeGimnasio.Modelo.Datos {
         }
 
         private void LlenaEntidad(ref Entidades.Usuario oUsuario, SqlDataReader drUsuario) {
-            //oUsuario.ID = Convert.IsDBNull(drUsuario["nID"]) ? 0 : Convert.ToInt32(drUsuario["nID"]);
+            oUsuario.ID = Convert.IsDBNull(drUsuario["nID"]) ? 0 : Convert.ToInt32(drUsuario["nID"]);
             oUsuario.Nombre = Convert.IsDBNull(drUsuario["Nombre_U"]) ? "" : Convert.ToString(drUsuario["Nombre_U"]).Trim();
             oUsuario.Contraseña = Convert.IsDBNull(drUsuario["Contraseña_U"]) ? "" : Convert.ToString(drUsuario["Contraseña_U"]).Trim();
             oUsuario.Profesion = Convert.IsDBNull(drUsuario["Profesion_U"]) ? "" : Convert.ToString(drUsuario["Profesion_U"]).Trim();

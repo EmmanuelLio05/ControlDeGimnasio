@@ -8,7 +8,6 @@ using System.Threading.Tasks;
 namespace ControlDeGimnasio.Modelo.Entidades {
     public class Usuario {
         #region Atributo
-        //Atributo de tipo ??
         private int nID;
         private String Nombre_U;
         private String Contraseña_U;
