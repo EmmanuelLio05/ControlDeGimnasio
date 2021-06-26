@@ -35,7 +35,23 @@ namespace ControlDeGimnasio.Vista {
 
         #region Eventos
         private void frmMain_Load(object sender, EventArgs e) {
-            AgregarToolTips();
+            frmLogin fLogin = new frmLogin();
+
+            try {
+                this.Visible = false;
+                switch (fLogin.ShowDialog()) {
+                    case DialogResult.OK:
+                        this.Visible = true;
+                        break;
+                    case DialogResult.Abort:
+                        this.DialogResult = DialogResult.Cancel;
+                        this.Close();
+                        break;
+                }
+                AgregarToolTips();
+            } catch (Exception ex) { 
+
+            }
         }
 
         private void button4_Click(object sender, EventArgs e) {
