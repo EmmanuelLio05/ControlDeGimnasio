@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using ControlDeGimnasio.Modelo.Entidades;
 
-namespace ControlDeGimnasio {
+namespace ControlDeGimnasio.Controlador {
     static class Program {
         /// <summary>
         /// Punto de entrada principal para la aplicación.
@@ -14,7 +14,7 @@ namespace ControlDeGimnasio {
         static void Main() {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmLogin());
+            Application.Run(new ControlDeGimnasio.Vista.frmLogin());
         }
     }
 }

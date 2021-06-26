@@ -1,5 +1,5 @@
 ﻿
-namespace ControlDeGimnasio {
+namespace ControlDeGimnasio.Vista {
     partial class frmSocio {
         /// <summary>
         /// Required designer variable.

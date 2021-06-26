@@ -93,9 +93,59 @@ namespace ControlDeGimnasio.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _150Aparato {
+            get {
+                object obj = ResourceManager.GetObject("150Aparato", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _150clase {
+            get {
+                object obj = ResourceManager.GetObject("150clase", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _150login {
             get {
                 object obj = ResourceManager.GetObject("150login", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _150reporte {
+            get {
+                object obj = ResourceManager.GetObject("150reporte", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _150socios {
+            get {
+                object obj = ResourceManager.GetObject("150socios", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _150usuario {
+            get {
+                object obj = ResourceManager.GetObject("150usuario", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -156,6 +206,26 @@ namespace ControlDeGimnasio.Properties {
         internal static System.Drawing.Bitmap _493ea17829d3f4730f05df8c80fc1a05 {
             get {
                 object obj = ResourceManager.GetObject("493ea17829d3f4730f05df8c80fc1a05", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _50about {
+            get {
+                object obj = ResourceManager.GetObject("50about", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _50logout {
+            get {
+                object obj = ResourceManager.GetObject("50logout", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

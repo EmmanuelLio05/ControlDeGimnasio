@@ -9,18 +9,12 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ControlDeGimnasio.Vista {
-    public partial class frmLogin : Form {
-        public frmLogin() {
+    public partial class frmSociosCat : Form {
+        public frmSociosCat() {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void frmLogin_Load(object sender, EventArgs e)
-        {
+        private void frmSociosCat_Load(object sender, EventArgs e) {
 
         }
     }

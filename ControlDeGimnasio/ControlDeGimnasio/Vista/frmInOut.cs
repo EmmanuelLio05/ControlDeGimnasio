@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ControlDeGimnasio {
+namespace ControlDeGimnasio.Vista {
     public partial class frmInOut : Form {
         public frmInOut() {
             InitializeComponent();

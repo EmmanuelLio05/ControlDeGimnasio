@@ -1,5 +1,5 @@
 ﻿
-namespace ControlDeGimnasio {
+namespace ControlDeGimnasio.Vista {
     partial class frmInOut {
         /// <summary>
         /// Required designer variable.
@@ -24,15 +24,14 @@ namespace ControlDeGimnasio {
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmInOut));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnEntrar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dgvSociosEnGym = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnEntrar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSociosEnGym)).BeginInit();
@@ -45,13 +44,25 @@ namespace ControlDeGimnasio {
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Left;
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(263, 566);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Entrar";
+            // 
+            // btnEntrar
+            // 
+            this.btnEntrar.BackColor = System.Drawing.Color.Transparent;
+            this.btnEntrar.Image = global::ControlDeGimnasio.Properties.Resources._150login;
+            this.btnEntrar.Location = new System.Drawing.Point(52, 330);
+            this.btnEntrar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEntrar.Name = "btnEntrar";
+            this.btnEntrar.Size = new System.Drawing.Size(158, 158);
+            this.btnEntrar.TabIndex = 2;
+            this.btnEntrar.UseVisualStyleBackColor = false;
+            this.btnEntrar.Click += new System.EventHandler(this.btnEntrar_Click);
             // 
             // label1
             // 
@@ -69,7 +80,7 @@ namespace ControlDeGimnasio {
             // 
             this.textBox1.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(13, 284);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(237, 37);
             this.textBox1.TabIndex = 0;
@@ -79,9 +90,9 @@ namespace ControlDeGimnasio {
             this.groupBox2.Controls.Add(this.dgvSociosEnGym);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox2.Location = new System.Drawing.Point(263, 0);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(290, 566);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
@@ -92,20 +103,12 @@ namespace ControlDeGimnasio {
             this.dgvSociosEnGym.AllowUserToAddRows = false;
             this.dgvSociosEnGym.AllowUserToDeleteRows = false;
             this.dgvSociosEnGym.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvSociosEnGym.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvSociosEnGym.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvSociosEnGym.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1});
             this.dgvSociosEnGym.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvSociosEnGym.Location = new System.Drawing.Point(4, 23);
-            this.dgvSociosEnGym.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvSociosEnGym.Margin = new System.Windows.Forms.Padding(4);
             this.dgvSociosEnGym.Name = "dgvSociosEnGym";
             this.dgvSociosEnGym.Size = new System.Drawing.Size(282, 539);
             this.dgvSociosEnGym.TabIndex = 0;
@@ -116,17 +119,6 @@ namespace ControlDeGimnasio {
             this.Column1.HeaderText = "Socio";
             this.Column1.Name = "Column1";
             // 
-            // btnEntrar
-            // 
-            this.btnEntrar.Image = global::ControlDeGimnasio.Properties.Resources._150login;
-            this.btnEntrar.Location = new System.Drawing.Point(52, 330);
-            this.btnEntrar.Margin = new System.Windows.Forms.Padding(4);
-            this.btnEntrar.Name = "btnEntrar";
-            this.btnEntrar.Size = new System.Drawing.Size(158, 158);
-            this.btnEntrar.TabIndex = 2;
-            this.btnEntrar.UseVisualStyleBackColor = true;
-            this.btnEntrar.Click += new System.EventHandler(this.btnEntrar_Click);
-            // 
             // frmInOut
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
@@ -136,7 +128,7 @@ namespace ControlDeGimnasio {
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmInOut";
             this.Text = "Salidas y Entradas";
             this.Load += new System.EventHandler(this.frmInOut_Load);

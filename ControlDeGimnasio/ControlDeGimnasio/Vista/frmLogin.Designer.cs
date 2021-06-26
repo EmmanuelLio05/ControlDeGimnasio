@@ -1,5 +1,5 @@
 ﻿
-namespace ControlDeGimnasio {
+namespace ControlDeGimnasio.Vista {
     partial class frmLogin {
         /// <summary>
         /// Required designer variable.

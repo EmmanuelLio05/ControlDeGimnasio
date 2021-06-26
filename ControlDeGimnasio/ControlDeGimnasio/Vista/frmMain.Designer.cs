@@ -1,5 +1,5 @@
 ﻿
-namespace ControlDeGimnasio {
+namespace ControlDeGimnasio.Vista {
     partial class frmMain {
         /// <summary>
         /// Required designer variable.
@@ -25,70 +25,135 @@ namespace ControlDeGimnasio {
         /// </summary>
         private void InitializeComponent() {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.btnOfertas = new System.Windows.Forms.Button();
+            this.btnLogout = new System.Windows.Forms.Button();
+            this.btnAbout = new System.Windows.Forms.Button();
+            this.btnSocios = new System.Windows.Forms.Button();
+            this.btnAparatos = new System.Windows.Forms.Button();
+            this.btnClases = new System.Windows.Forms.Button();
+            this.btnUsuarios = new System.Windows.Forms.Button();
+            this.btnReportes = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button4
+            // btnLogout
             // 
-            this.button4.Image = global::ControlDeGimnasio.Properties.Resources._493ea17829d3f4730f05df8c80fc1a05;
-            this.button4.Location = new System.Drawing.Point(38, 33);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(191, 174);
-            this.button4.TabIndex = 3;
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnLogout.BackColor = System.Drawing.Color.Transparent;
+            this.btnLogout.Image = global::ControlDeGimnasio.Properties.Resources._50logout;
+            this.btnLogout.Location = new System.Drawing.Point(485, 339);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(75, 75);
+            this.btnLogout.TabIndex = 7;
+            this.btnLogout.UseVisualStyleBackColor = false;
+            this.btnLogout.Click += new System.EventHandler(this.button6_Click);
             // 
-            // button3
+            // btnAbout
             // 
-            this.button3.Image = global::ControlDeGimnasio.Properties.Resources.pngtree_tools_icon_design_vector_png_image_1705775;
-            this.button3.Location = new System.Drawing.Point(38, 264);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(191, 174);
-            this.button3.TabIndex = 2;
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnAbout.BackColor = System.Drawing.Color.Transparent;
+            this.btnAbout.Image = global::ControlDeGimnasio.Properties.Resources._50about;
+            this.btnAbout.Location = new System.Drawing.Point(402, 256);
+            this.btnAbout.Name = "btnAbout";
+            this.btnAbout.Size = new System.Drawing.Size(75, 75);
+            this.btnAbout.TabIndex = 6;
+            this.btnAbout.UseVisualStyleBackColor = false;
+            this.btnAbout.Click += new System.EventHandler(this.button5_Click);
             // 
-            // button2
+            // btnSocios
             // 
-            this.button2.Image = global::ControlDeGimnasio.Properties.Resources.free_user_group_icon_296_thumb;
-            this.button2.Location = new System.Drawing.Point(287, 33);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(191, 174);
-            this.button2.TabIndex = 1;
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnSocios.BackColor = System.Drawing.Color.Transparent;
+            this.btnSocios.Image = global::ControlDeGimnasio.Properties.Resources._150socios;
+            this.btnSocios.Location = new System.Drawing.Point(12, 85);
+            this.btnSocios.Name = "btnSocios";
+            this.btnSocios.Size = new System.Drawing.Size(158, 158);
+            this.btnSocios.TabIndex = 1;
+            this.btnSocios.UseVisualStyleBackColor = false;
+            this.btnSocios.Click += new System.EventHandler(this.button1_Click);
             // 
-            // btnOfertas
+            // btnAparatos
             // 
-            this.btnOfertas.Image = global::ControlDeGimnasio.Properties.Resources._14038073941582872993_5121;
-            this.btnOfertas.Location = new System.Drawing.Point(287, 264);
-            this.btnOfertas.Name = "btnOfertas";
-            this.btnOfertas.Size = new System.Drawing.Size(191, 174);
-            this.btnOfertas.TabIndex = 0;
-            this.btnOfertas.UseVisualStyleBackColor = true;
+            this.btnAparatos.BackColor = System.Drawing.Color.Transparent;
+            this.btnAparatos.Image = global::ControlDeGimnasio.Properties.Resources._150Aparato;
+            this.btnAparatos.Location = new System.Drawing.Point(207, 85);
+            this.btnAparatos.Name = "btnAparatos";
+            this.btnAparatos.Size = new System.Drawing.Size(158, 158);
+            this.btnAparatos.TabIndex = 2;
+            this.btnAparatos.UseVisualStyleBackColor = false;
+            this.btnAparatos.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // btnClases
+            // 
+            this.btnClases.BackColor = System.Drawing.Color.Transparent;
+            this.btnClases.Image = global::ControlDeGimnasio.Properties.Resources._150clase;
+            this.btnClases.Location = new System.Drawing.Point(402, 85);
+            this.btnClases.Name = "btnClases";
+            this.btnClases.Size = new System.Drawing.Size(158, 158);
+            this.btnClases.TabIndex = 3;
+            this.btnClases.UseVisualStyleBackColor = false;
+            this.btnClases.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // btnUsuarios
+            // 
+            this.btnUsuarios.BackColor = System.Drawing.Color.Transparent;
+            this.btnUsuarios.Image = global::ControlDeGimnasio.Properties.Resources._150usuario;
+            this.btnUsuarios.Location = new System.Drawing.Point(12, 256);
+            this.btnUsuarios.Name = "btnUsuarios";
+            this.btnUsuarios.Size = new System.Drawing.Size(158, 158);
+            this.btnUsuarios.TabIndex = 4;
+            this.btnUsuarios.UseVisualStyleBackColor = false;
+            this.btnUsuarios.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // btnReportes
+            // 
+            this.btnReportes.BackColor = System.Drawing.Color.Transparent;
+            this.btnReportes.Image = global::ControlDeGimnasio.Properties.Resources._150reporte;
+            this.btnReportes.Location = new System.Drawing.Point(207, 256);
+            this.btnReportes.Name = "btnReportes";
+            this.btnReportes.Size = new System.Drawing.Size(158, 158);
+            this.btnReportes.TabIndex = 5;
+            this.btnReportes.UseVisualStyleBackColor = false;
+            this.btnReportes.Click += new System.EventHandler(this.btnOfertas_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(50, 13);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(472, 56);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Gimnasio VO2MAX";
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
-            this.ClientSize = new System.Drawing.Size(516, 450);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.btnOfertas);
+            this.ClientSize = new System.Drawing.Size(576, 426);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnLogout);
+            this.Controls.Add(this.btnAbout);
+            this.Controls.Add(this.btnSocios);
+            this.Controls.Add(this.btnAparatos);
+            this.Controls.Add(this.btnClases);
+            this.Controls.Add(this.btnUsuarios);
+            this.Controls.Add(this.btnReportes);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmMain";
             this.Text = "Main";
+            this.Load += new System.EventHandler(this.frmMain_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button btnOfertas;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnReportes;
+        private System.Windows.Forms.Button btnUsuarios;
+        private System.Windows.Forms.Button btnClases;
+        private System.Windows.Forms.Button btnAparatos;
+        private System.Windows.Forms.Button btnSocios;
+        private System.Windows.Forms.Button btnAbout;
+        private System.Windows.Forms.Button btnLogout;
+        private System.Windows.Forms.Label label1;
     }
 }

@@ -3,7 +3,7 @@ using System.Windows.Forms;
 using Entidades = ControlDeGimnasio.Modelo.Entidades;
 using Datos = ControlDeGimnasio.Modelo.Datos;
 
-namespace ControlDeGimnasio {
+namespace ControlDeGimnasio.Vista {
     public partial class frmSocio : Form {
         private Entidades.Acciones _Accion = Entidades.Acciones.Registrar;
         private int nID;
@@ -41,6 +41,8 @@ namespace ControlDeGimnasio {
                     default:
                         break;
                 }
+                this.DialogResult = DialogResult.OK;
+                this.Close();
             }
         }
 

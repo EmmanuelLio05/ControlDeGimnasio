@@ -56,6 +56,8 @@ namespace ControlDeGimnasio.Vista
                     default:
                         break;
                 }
+                this.DialogResult = DialogResult.OK;
+                this.Close();
             }
         }
 
