@@ -60,6 +60,12 @@
     <Compile Include="Modelo\Entidades\TomaClase.cs" />
     <Compile Include="Modelo\Entidades\UsaAparato.cs" />
     <Compile Include="Modelo\Entidades\Usuario.cs" />
+    <Compile Include="Vista\frmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\frmAbout.Designer.cs">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vista\frmAparato.cs">
       <SubType>Form</SubType>
     </Compile>
