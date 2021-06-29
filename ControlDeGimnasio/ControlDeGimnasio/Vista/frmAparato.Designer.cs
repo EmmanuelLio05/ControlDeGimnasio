@@ -25,13 +25,13 @@ namespace ControlDeGimnasio.Vista {
         /// </summary>
         private void InitializeComponent() {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.btnGuardar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtClave = new System.Windows.Forms.TextBox();
             this.txtAparato = new System.Windows.Forms.TextBox();
             this.chkEstado = new System.Windows.Forms.CheckBox();
-            this.btnSalir = new System.Windows.Forms.Button();
-            this.btnGuardar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -45,6 +45,26 @@ namespace ControlDeGimnasio.Vista {
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(48, 154);
             this.panel1.TabIndex = 1;
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.Image = global::ControlDeGimnasio.Properties.Resources._24close;
+            this.btnSalir.Location = new System.Drawing.Point(3, 56);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(39, 36);
+            this.btnSalir.TabIndex = 1;
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
+            // btnGuardar
+            // 
+            this.btnGuardar.Image = global::ControlDeGimnasio.Properties.Resources._30floppydisk;
+            this.btnGuardar.Location = new System.Drawing.Point(3, 14);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(38, 38);
+            this.btnGuardar.TabIndex = 0;
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // label1
             // 
@@ -90,26 +110,6 @@ namespace ControlDeGimnasio.Vista {
             this.chkEstado.UseVisualStyleBackColor = true;
             this.chkEstado.CheckedChanged += new System.EventHandler(this.chkEstado_CheckedChanged);
             // 
-            // btnSalir
-            // 
-            this.btnSalir.Image = global::ControlDeGimnasio.Properties.Resources._24close;
-            this.btnSalir.Location = new System.Drawing.Point(3, 56);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(39, 36);
-            this.btnSalir.TabIndex = 1;
-            this.btnSalir.UseVisualStyleBackColor = true;
-            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
-            // 
-            // btnGuardar
-            // 
-            this.btnGuardar.Image = global::ControlDeGimnasio.Properties.Resources._30floppydisk;
-            this.btnGuardar.Location = new System.Drawing.Point(3, 14);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(38, 38);
-            this.btnGuardar.TabIndex = 0;
-            this.btnGuardar.UseVisualStyleBackColor = true;
-            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
-            // 
             // frmAparato
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
@@ -125,6 +125,7 @@ namespace ControlDeGimnasio.Vista {
             this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmAparato";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Aparato";
             this.Load += new System.EventHandler(this.frmAparato_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmAparato_KeyDown);

@@ -14,6 +14,7 @@ namespace ControlDeGimnasio.Modelo.Entidades {
         private String Profesion_U;
         private String Direccion_U;
         private String Telefono_U;
+        private String Tipo_U;
         #endregion
 
         #region Propiedades
@@ -47,6 +48,11 @@ namespace ControlDeGimnasio.Modelo.Entidades {
             get { return Telefono_U; }
             set { Telefono_U = value; }
         }
+
+        public String Tipo {
+            get { return Tipo_U; }
+            set { Tipo_U = value; }
+        }
         #endregion
 
         #region Metodos
@@ -58,6 +64,7 @@ namespace ControlDeGimnasio.Modelo.Entidades {
             Profesion_U = "";
             Direccion_U = "";
             Telefono_U = "";
+            Tipo_U = "";
         }
         #endregion
 

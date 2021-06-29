@@ -29,7 +29,7 @@ namespace ControlDeGimnasio.Vista {
             frmClase f = new frmClase();
             
             f.Accion = Modelo.Entidades.Acciones.Actualizar;
-            f.Clase = Convert.ToString( dgvClases.SelectedRows[0].Cells["Nombre"].Value);
+            f.Clase = Convert.ToString( dgvClases.SelectedRows[0].Cells["nombreDataGridViewTextBoxColumn"].Value);
             f.ShowDialog();
         }
 
@@ -53,5 +53,9 @@ namespace ControlDeGimnasio.Vista {
         }
         #endregion
 
+        private void btnSalir_Click_1(object sender, EventArgs e) {
+            this.DialogResult = DialogResult.Cancel;
+            this.Close();
+        }
     }
 }

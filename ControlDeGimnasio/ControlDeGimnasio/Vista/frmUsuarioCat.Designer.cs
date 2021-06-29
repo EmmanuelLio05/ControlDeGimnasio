@@ -65,11 +65,12 @@ namespace ControlDeGimnasio.Vista
             this.telefonoDataGridViewTextBoxColumn});
             this.dgvUsuarios.DataSource = this.bindingSource1;
             this.dgvUsuarios.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvUsuarios.Location = new System.Drawing.Point(0, 0);
+            this.dgvUsuarios.Location = new System.Drawing.Point(45, 0);
             this.dgvUsuarios.Margin = new System.Windows.Forms.Padding(4);
             this.dgvUsuarios.Name = "dgvUsuarios";
             this.dgvUsuarios.ReadOnly = true;
-            this.dgvUsuarios.Size = new System.Drawing.Size(625, 537);
+            this.dgvUsuarios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvUsuarios.Size = new System.Drawing.Size(580, 537);
             this.dgvUsuarios.TabIndex = 3;
             this.dgvUsuarios.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUsuarios_CellContentClick);
             // 
@@ -166,11 +167,13 @@ namespace ControlDeGimnasio.Vista
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(625, 537);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.dgvUsuarios);
+            this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmUsuarioCat";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Catalogo de Usuarios";
             this.Load += new System.EventHandler(this.frmUsuarioCat_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmClaseCat_KeyDown);

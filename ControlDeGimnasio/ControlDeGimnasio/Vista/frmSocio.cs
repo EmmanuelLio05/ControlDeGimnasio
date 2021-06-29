@@ -114,7 +114,7 @@ namespace ControlDeGimnasio.Vista {
             oESocio.Materno = txtMaterno.Text;
             oESocio.Telefono = txtMaterno.Text;
             oESocio.Direccion = txtDireccion.Text;
-            oESocio.Monto = Convert.ToDouble( txtMonto.Text);
+            oESocio.Monto = Convert.ToDecimal( txtMonto.Text);
             oESocio.Inscrito = chkInscrito.Checked;
             oESocio.FechaInscripcion = dtpFechaRegistro.Value;
         }

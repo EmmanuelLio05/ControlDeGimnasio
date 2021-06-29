@@ -154,6 +154,7 @@ namespace ControlDeGimnasio.Vista {
             this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmClase";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Clase";
             this.Load += new System.EventHandler(this.frmClase_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmClase_KeyDown);

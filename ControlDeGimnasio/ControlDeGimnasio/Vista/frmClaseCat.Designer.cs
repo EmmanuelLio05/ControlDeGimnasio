@@ -31,9 +31,9 @@ namespace ControlDeGimnasio.Vista {
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.dgvClases = new System.Windows.Forms.DataGridView();
+            this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descripcionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.horaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.entrenadorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bsClase = new System.Windows.Forms.BindingSource(this.components);
             this.panel1.SuspendLayout();
@@ -71,6 +71,7 @@ namespace ControlDeGimnasio.Vista {
             this.btnSalir.Size = new System.Drawing.Size(38, 38);
             this.btnSalir.TabIndex = 1;
             this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click_1);
             // 
             // btnRegistrar
             // 
@@ -91,42 +92,47 @@ namespace ControlDeGimnasio.Vista {
             this.dgvClases.AutoGenerateColumns = false;
             this.dgvClases.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvClases.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.nombreDataGridViewTextBoxColumn,
             this.descripcionDataGridViewTextBoxColumn,
             this.horaDataGridViewTextBoxColumn,
-            this.nombreDataGridViewTextBoxColumn,
             this.entrenadorDataGridViewTextBoxColumn});
             this.dgvClases.DataSource = this.bsClase;
             this.dgvClases.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvClases.Location = new System.Drawing.Point(45, 0);
             this.dgvClases.MultiSelect = false;
             this.dgvClases.Name = "dgvClases";
+            this.dgvClases.ReadOnly = true;
             this.dgvClases.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvClases.Size = new System.Drawing.Size(491, 514);
             this.dgvClases.TabIndex = 2;
-            // 
-            // descripcionDataGridViewTextBoxColumn
-            // 
-            this.descripcionDataGridViewTextBoxColumn.DataPropertyName = "Descripcion";
-            this.descripcionDataGridViewTextBoxColumn.HeaderText = "Descripcion";
-            this.descripcionDataGridViewTextBoxColumn.Name = "descripcionDataGridViewTextBoxColumn";
-            // 
-            // horaDataGridViewTextBoxColumn
-            // 
-            this.horaDataGridViewTextBoxColumn.DataPropertyName = "Hora";
-            this.horaDataGridViewTextBoxColumn.HeaderText = "Hora";
-            this.horaDataGridViewTextBoxColumn.Name = "horaDataGridViewTextBoxColumn";
             // 
             // nombreDataGridViewTextBoxColumn
             // 
             this.nombreDataGridViewTextBoxColumn.DataPropertyName = "Nombre";
             this.nombreDataGridViewTextBoxColumn.HeaderText = "Nombre";
             this.nombreDataGridViewTextBoxColumn.Name = "nombreDataGridViewTextBoxColumn";
+            this.nombreDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // descripcionDataGridViewTextBoxColumn
+            // 
+            this.descripcionDataGridViewTextBoxColumn.DataPropertyName = "Descripcion";
+            this.descripcionDataGridViewTextBoxColumn.HeaderText = "Descripcion";
+            this.descripcionDataGridViewTextBoxColumn.Name = "descripcionDataGridViewTextBoxColumn";
+            this.descripcionDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // horaDataGridViewTextBoxColumn
+            // 
+            this.horaDataGridViewTextBoxColumn.DataPropertyName = "Hora";
+            this.horaDataGridViewTextBoxColumn.HeaderText = "Hora";
+            this.horaDataGridViewTextBoxColumn.Name = "horaDataGridViewTextBoxColumn";
+            this.horaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // entrenadorDataGridViewTextBoxColumn
             // 
             this.entrenadorDataGridViewTextBoxColumn.DataPropertyName = "Entrenador";
             this.entrenadorDataGridViewTextBoxColumn.HeaderText = "Entrenador";
             this.entrenadorDataGridViewTextBoxColumn.Name = "entrenadorDataGridViewTextBoxColumn";
+            this.entrenadorDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // bsClase
             // 
@@ -143,6 +149,7 @@ namespace ControlDeGimnasio.Vista {
             this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmClaseCat";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Catalogo de clases";
             this.Load += new System.EventHandler(this.frmClaseCat_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmClaseCat_KeyDown);
@@ -159,11 +166,11 @@ namespace ControlDeGimnasio.Vista {
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Button btnRegistrar;
         private System.Windows.Forms.DataGridView dgvClases;
-        private System.Windows.Forms.DataGridViewTextBoxColumn descripcionDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn horaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nombreDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn entrenadorDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource bsClase;
         private System.Windows.Forms.Button btnActulizar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nombreDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn descripcionDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn horaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn entrenadorDataGridViewTextBoxColumn;
     }
 }

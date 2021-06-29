@@ -42,7 +42,7 @@ namespace ControlDeGimnasio.Modelo.Datos {
             }
         }
 
-        public void Delete(Int32 Numero_S) {
+        public void Delete(Int32 Num_A) {
             var oEGeneral = new General();
 
             using (var oCon = oEGeneral.Conectar()) {
@@ -51,28 +51,28 @@ namespace ControlDeGimnasio.Modelo.Datos {
                     oComm.Connection = oCon;
                     oComm.CommandText = "Aparato_Disable";
                     oComm.CommandType = CommandType.StoredProcedure;
-                    oComm.Parameters.AddWithValue("@Numero_S", Numero_S);
+                    oComm.Parameters.AddWithValue("@Num_A", Num_A);
                     oComm.ExecuteScalar();
                 }
             }
         }
 
-        public bool Verificar(Int32 Numero_S) {
+        public bool Verificar(Int32 Num_A) {
             var oEGeneral = new General();
 
             using (var oCon = oEGeneral.Conectar()) {
                 oCon.Open();
                 using (var oComm = new SqlCommand()) {
                     oComm.Connection = oCon;
-                    oComm.CommandText = "Aparatos_SelectOne";
+                    oComm.CommandText = "Aparato_GetOne";
                     oComm.CommandType = CommandType.StoredProcedure;
-                    oComm.Parameters.AddWithValue("@Numero_S", Numero_S);
+                    oComm.Parameters.AddWithValue("@Num_A", Num_A);
                     return oComm.ExecuteReader().HasRows;
                 }
             }
         }
 
-        public Entidades.Aparato GetOne(Int32 Numero_S) {
+        public Entidades.Aparato GetOne(Int32 Num_A) {
             var oEGeneral = new General();
             SqlDataReader drAparato;
             Entidades.Aparato oAparato = new Entidades.Aparato();
@@ -81,9 +81,9 @@ namespace ControlDeGimnasio.Modelo.Datos {
                 oCon.Open();
                 using (var oComm = new SqlCommand()) {
                     oComm.Connection = oCon;
-                    oComm.CommandText = "Aparatos_SelectOne";
+                    oComm.CommandText = "Aparato_GetOne";
                     oComm.CommandType = CommandType.StoredProcedure;
-                    oComm.Parameters.AddWithValue("@Numero_S", Numero_S);
+                    oComm.Parameters.AddWithValue("@Num_A", Num_A);
                     drAparato = oComm.ExecuteReader();
                     if (drAparato.Read()) {
                         LlenaEntidad(ref oAparato, drAparato);
@@ -127,7 +127,7 @@ namespace ControlDeGimnasio.Modelo.Datos {
                 oCon.Open();
                 using (var oComm = new SqlCommand()) {
                     oComm.Connection = oCon;
-                    oComm.CommandText = "Aparatos_SelectAll";
+                    oComm.CommandText = "Aparato_GetAll";
                     oComm.CommandType = CommandType.StoredProcedure;
                     drAparato = oComm.ExecuteReader();
                     while (drAparato.Read()) {

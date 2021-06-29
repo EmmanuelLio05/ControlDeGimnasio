@@ -138,6 +138,7 @@ namespace ControlDeGimnasio.Vista {
             this.Controls.Add(this.btnReportes);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Main";
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.ResumeLayout(false);

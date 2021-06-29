@@ -26,7 +26,7 @@ namespace ControlDeGimnasio.Vista {
             frmAparato f = new frmAparato();
 
             f.Accion = Modelo.Entidades.Acciones.Actualizar;
-            f.ID = Convert.ToInt32(dgvAparatos.SelectedRows[0].Cells["Nombre"].Value);
+            f.ID = Convert.ToInt32(dgvAparatos.SelectedRows[0].Cells["idDataGridViewTextBoxColumn"].Value);
             f.ShowDialog();
         }
 

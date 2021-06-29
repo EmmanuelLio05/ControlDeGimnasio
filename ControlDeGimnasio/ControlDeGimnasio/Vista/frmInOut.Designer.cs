@@ -130,6 +130,7 @@ namespace ControlDeGimnasio.Vista {
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmInOut";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Salidas y Entradas";
             this.Load += new System.EventHandler(this.frmInOut_Load);
             this.groupBox1.ResumeLayout(false);

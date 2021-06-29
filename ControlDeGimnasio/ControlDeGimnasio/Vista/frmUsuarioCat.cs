@@ -48,7 +48,7 @@ namespace ControlDeGimnasio.Vista
 
             f.Accion = Modelo.Entidades.Acciones.Actualizar;
 
-            f.Usuario = Convert.ToInt32(dgvUsuarios.SelectedRows[0].Cells["ID"].Value);
+            f.Usuario = Convert.ToInt32(dgvUsuarios.SelectedRows[0].Cells["iDDataGridViewTextBoxColumn"].Value);
             f.ShowDialog();
 
         }

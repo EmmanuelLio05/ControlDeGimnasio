@@ -18,9 +18,9 @@ namespace ControlDeGimnasio.Modelo.Entidades {
         #endregion
 
         #region Propiedades
-        public Double Monto {
-            get { return Monto; }
-            set { Monto = value; }
+        public decimal Monto {
+            get { return _Monto; }
+            set { _Monto = value; }
         }
 
         public bool Inscrito{

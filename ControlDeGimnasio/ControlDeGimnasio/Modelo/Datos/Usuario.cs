@@ -23,6 +23,7 @@ namespace ControlDeGimnasio.Modelo.Datos {
                     oComm.Parameters.AddWithValue("@Profesion_U", oUsuario.Profesion);
                     oComm.Parameters.AddWithValue("@Direccion_U", oUsuario.Direccion);
                     oComm.Parameters.AddWithValue("@Telefono_U", oUsuario.Telefono);
+                    oComm.Parameters.AddWithValue("@Telefono_U", oUsuario.Telefono);
                     return oComm.ExecuteScalar();
                 }
             }
@@ -43,6 +44,7 @@ namespace ControlDeGimnasio.Modelo.Datos {
                     oComm.Parameters.AddWithValue("@Profesion_U", oUsuario.Profesion);
                     oComm.Parameters.AddWithValue("@Direccion_U", oUsuario.Direccion);
                     oComm.Parameters.AddWithValue("@Telefono_U", oUsuario.Telefono);
+                    oComm.Parameters.AddWithValue("@Tipo_U", oUsuario.Tipo);
                     return oComm.ExecuteScalar();
                 }
             }
@@ -72,7 +74,7 @@ namespace ControlDeGimnasio.Modelo.Datos {
                 oCon.Open();
                 using (var oComm = new SqlCommand()) {
                     oComm.Connection = oCon;
-                    oComm.CommandText = "Usuarios_SelectOne";
+                    oComm.CommandText = "Usuario_GetOne";
                     oComm.CommandType = CommandType.StoredProcedure;
                     oComm.Parameters.AddWithValue("@nID", nID);
                     return oComm.ExecuteReader().HasRows;
@@ -90,7 +92,7 @@ namespace ControlDeGimnasio.Modelo.Datos {
                 oCon.Open();
                 using (var oComm = new SqlCommand()) {
                     oComm.Connection = oCon;
-                    oComm.CommandText = "Usuarios_SelectOne";
+                    oComm.CommandText = "Usuario_GetOne";
                     oComm.CommandType = CommandType.StoredProcedure;
                     oComm.Parameters.AddWithValue("@nID", nID);
                     drUsuario = oComm.ExecuteReader();
@@ -136,7 +138,7 @@ namespace ControlDeGimnasio.Modelo.Datos {
                 oCon.Open();
                 using (var oComm = new SqlCommand()) {
                     oComm.Connection = oCon;
-                    oComm.CommandText = "Usuarios_SelectAll";
+                    oComm.CommandText = "Usuario_GetAll";
                     oComm.CommandType = CommandType.StoredProcedure;
                     drUsuario = oComm.ExecuteReader();
                     while (drUsuario.Read()) {
@@ -149,6 +151,28 @@ namespace ControlDeGimnasio.Modelo.Datos {
             }
         }
 
+        public Entidades.Usuario Login(string sUsuario, string sContraseña) {
+            var oEGeneral = new General();
+            SqlDataReader drUsuario;
+            Entidades.Usuario oUsuario = new Entidades.Usuario();
+
+            using (var oCon = oEGeneral.Conectar()) {
+                oCon.Open();
+                using (var oComm = new SqlCommand()) {
+                    oComm.Connection = oCon;
+                    oComm.CommandText = "Usuario_Login";
+                    oComm.CommandType = CommandType.StoredProcedure;
+                    oComm.Parameters.AddWithValue("@Nombre_U", sUsuario);
+                    oComm.Parameters.AddWithValue("@Contraseña_U", sContraseña);
+                    drUsuario = oComm.ExecuteReader();
+                    if (drUsuario.Read()) {
+                        LlenaEntidad(ref oUsuario, drUsuario);
+                        return oUsuario;
+                    } else return null;
+                }
+            }
+        }
+
         private void LlenaEntidad(ref Entidades.Usuario oUsuario, SqlDataReader drUsuario) {
             oUsuario.ID = Convert.IsDBNull(drUsuario["nID"]) ? 0 : Convert.ToInt32(drUsuario["nID"]);
             oUsuario.Nombre = Convert.IsDBNull(drUsuario["Nombre_U"]) ? "" : Convert.ToString(drUsuario["Nombre_U"]).Trim();
@@ -156,6 +180,7 @@ namespace ControlDeGimnasio.Modelo.Datos {
             oUsuario.Profesion = Convert.IsDBNull(drUsuario["Profesion_U"]) ? "" : Convert.ToString(drUsuario["Profesion_U"]).Trim();
             oUsuario.Direccion = Convert.IsDBNull(drUsuario["Direccion_U"]) ? "" : Convert.ToString(drUsuario["Direccion_U"]).Trim();
             oUsuario.Telefono = Convert.IsDBNull(drUsuario["Telefono_U"]) ? "" : Convert.ToString(drUsuario["Telefono_U"]).Trim();
+            oUsuario.Tipo = Convert.IsDBNull(drUsuario["Tipo_U"]) ? "" : Convert.ToString(drUsuario["Tipo_U"]).Trim();
         }
     }
 }

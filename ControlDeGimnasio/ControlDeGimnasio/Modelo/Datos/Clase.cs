@@ -66,7 +66,7 @@ namespace ControlDeGimnasio.Modelo.Datos {
                 oCon.Open();
                 using (var oComm = new SqlCommand()) {
                     oComm.Connection = oCon;
-                    oComm.CommandText = "Clases_SelectOne";
+                    oComm.CommandText = "Clases_GetOne";
                     oComm.CommandType = CommandType.StoredProcedure;
                     oComm.Parameters.AddWithValue("@Nombre_C", Nombre_C);
                     return oComm.ExecuteReader().HasRows;
@@ -83,7 +83,7 @@ namespace ControlDeGimnasio.Modelo.Datos {
                 oCon.Open();
                 using (var oComm = new SqlCommand()) {
                     oComm.Connection = oCon;
-                    oComm.CommandText = "Clases_SelectOne";
+                    oComm.CommandText = "Clase_GetOne";
                     oComm.CommandType = CommandType.StoredProcedure;
                     oComm.Parameters.AddWithValue("@Nombre_C", Nombre_C);
                     drClase = oComm.ExecuteReader();
@@ -129,7 +129,7 @@ namespace ControlDeGimnasio.Modelo.Datos {
                 oCon.Open();
                 using (var oComm = new SqlCommand()) {
                     oComm.Connection = oCon;
-                    oComm.CommandText = "Clases_SelectAll";
+                    oComm.CommandText = "Clase_GetAll";
                     oComm.CommandType = CommandType.StoredProcedure;
                     drClase = oComm.ExecuteReader();
                     while (drClase.Read()) {

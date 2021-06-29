@@ -191,7 +191,9 @@ namespace ControlDeGimnasio.Vista
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.label1);
+            this.KeyPreview = true;
             this.Name = "frmUsuario";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registro de usuarios";
             this.Load += new System.EventHandler(this.frmUsuario_Load);
             this.panel1.ResumeLayout(false);

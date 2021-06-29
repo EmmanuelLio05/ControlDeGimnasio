@@ -77,7 +77,7 @@ namespace ControlDeGimnasio.Modelo.Datos {
                 oCon.Open();
                 using (var oComm = new SqlCommand()) {
                     oComm.Connection = oCon;
-                    oComm.CommandText = "Socios_SelectOne";
+                    oComm.CommandText = "Socio_GetOne";
                     oComm.CommandType = CommandType.StoredProcedure;
                     oComm.Parameters.AddWithValue("@Numero_S", Numero_S);
                     return oComm.ExecuteReader().HasRows;
@@ -94,7 +94,7 @@ namespace ControlDeGimnasio.Modelo.Datos {
                 oCon.Open();
                 using (var oComm = new SqlCommand()) {
                     oComm.Connection = oCon;
-                    oComm.CommandText = "Socios_SelectOne";
+                    oComm.CommandText = "Socio_GetOne";
                     oComm.CommandType = CommandType.StoredProcedure;
                     oComm.Parameters.AddWithValue("@Numero_S", Numero_S);
                     drSocio = oComm.ExecuteReader();
@@ -140,7 +140,7 @@ namespace ControlDeGimnasio.Modelo.Datos {
                 oCon.Open();
                 using (var oComm = new SqlCommand()) {
                     oComm.Connection = oCon;
-                    oComm.CommandText = "Socios_SelectAll";
+                    oComm.CommandText = "Socio_GetAll";
                     oComm.CommandType = CommandType.StoredProcedure;
                     drSocio = oComm.ExecuteReader();
                     while (drSocio.Read()) {
@@ -163,7 +163,7 @@ namespace ControlDeGimnasio.Modelo.Datos {
             oSocio.Telefono = Convert.IsDBNull(drSocio["Telefono_S"]) ? "" : Convert.ToString(drSocio["Telefono_S"]).Trim();
             oSocio.FechaInscripcion = Convert.IsDBNull(drSocio["Fecha_I"]) ? new DateTime(1900, 01, 01) : Convert.ToDateTime(drSocio["Fecha_I"]);
             oSocio.Inscrito = Convert.IsDBNull(drSocio["E_Suscripcion"]) ? false : Convert.ToBoolean(drSocio["E_Suscripcion"]);
-            oSocio.Monto = Convert.IsDBNull(drSocio["Monto"]) ? 0.0f : Convert.ToDouble(drSocio["Monto"]);
+            oSocio.Monto = Convert.IsDBNull(drSocio["Monto"]) ? 0.0m : Convert.ToDecimal(drSocio["Monto"]);
         }
     }
 }
