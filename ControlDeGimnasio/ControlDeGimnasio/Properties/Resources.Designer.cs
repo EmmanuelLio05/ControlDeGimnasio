@@ -203,6 +203,16 @@ namespace ControlDeGimnasio.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _30searchblack {
+            get {
+                object obj = ResourceManager.GetObject("30searchblack", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _493ea17829d3f4730f05df8c80fc1a05 {
             get {
                 object obj = ResourceManager.GetObject("493ea17829d3f4730f05df8c80fc1a05", resourceCulture);

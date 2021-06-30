@@ -79,7 +79,8 @@ namespace ControlDeGimnasio.Vista {
         }
 
         private void button5_Click(object sender, EventArgs e) {
-
+            frmAbout f = new frmAbout();
+            f.ShowDialog();
         }
 
         private void button6_Click(object sender, EventArgs e) {

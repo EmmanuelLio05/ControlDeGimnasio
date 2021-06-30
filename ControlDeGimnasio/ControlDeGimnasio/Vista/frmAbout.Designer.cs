@@ -24,6 +24,7 @@ namespace ControlDeGimnasio.Vista {
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAbout));
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnSalir = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -182,7 +183,10 @@ namespace ControlDeGimnasio.Vista {
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.KeyPreview = true;
             this.Name = "frmAbout";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Acerca";
             this.Load += new System.EventHandler(this.frmAbout_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmClase_KeyDown);
