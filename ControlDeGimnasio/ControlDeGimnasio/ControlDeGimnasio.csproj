@@ -140,6 +140,9 @@
     <Compile Include="Vista\frmUsuarioCat.Designer.cs">
       <DependentUpon>frmUsuarioCat.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Vista\frmAbout.resx">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vista\frmAparato.resx">
       <DependentUpon>frmAparato.cs</DependentUpon>
     </EmbeddedResource>
