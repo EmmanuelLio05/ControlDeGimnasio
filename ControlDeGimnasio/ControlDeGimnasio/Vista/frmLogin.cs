@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Entidades = ControlDeGimnasio.Modelo.Entidades;
 using Datos = ControlDeGimnasio.Modelo.Datos;
+using ControlDeGimnasio.Properties;
 
 namespace ControlDeGimnasio.Vista {
     public partial class frmLogin : Form {
@@ -24,6 +25,9 @@ namespace ControlDeGimnasio.Vista {
                 if (Validar()) {
                     oUsuario = oDUsuario.Login(txtUser.Text.Trim(), txtPass.Text.Trim());
                     if (oUsuario != null) {
+                        Settings.Default.NombreUsuario = oUsuario.Nombre;
+                        Settings.Default.NumeroUsuario = oUsuario.ID;
+                        Settings.Default.TipoUsuario = oUsuario.Tipo;
                         this.DialogResult = DialogResult.OK;
                     } else {
                         MessageBox.Show("Usuario o contraseña incorrecta.", "Mensaje del sistema", MessageBoxButtons.OK, MessageBoxIcon.Warning);
