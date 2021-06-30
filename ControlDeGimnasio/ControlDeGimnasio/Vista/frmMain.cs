@@ -43,9 +43,9 @@ namespace ControlDeGimnasio.Vista {
                     case DialogResult.OK:
                         this.Visible = true;
                         break;
-                    case DialogResult.Abort:
+                    default:
                         this.DialogResult = DialogResult.Cancel;
-                        this.Close();
+                        System.Windows.Forms.Application.Exit();
                         break;
                 }
                 AgregarToolTips();

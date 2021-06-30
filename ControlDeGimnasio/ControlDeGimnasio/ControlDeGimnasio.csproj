@@ -49,6 +49,7 @@
     <Compile Include="Modelo\Datos\Aparato.cs" />
     <Compile Include="Modelo\Datos\Clase.cs" />
     <Compile Include="Modelo\Datos\General.cs" />
+    <Compile Include="Modelo\Datos\Registro.cs" />
     <Compile Include="Modelo\Datos\Socio.cs" />
     <Compile Include="Modelo\Datos\TomaClase.cs" />
     <Compile Include="Modelo\Datos\UsaAparato.cs" />
@@ -56,6 +57,7 @@
     <Compile Include="Modelo\Entidades\Aparato.cs" />
     <Compile Include="Modelo\Entidades\Clase.cs" />
     <Compile Include="Modelo\Entidades\General.cs" />
+    <Compile Include="Modelo\Entidades\Registro.cs" />
     <Compile Include="Modelo\Entidades\Socio.cs" />
     <Compile Include="Modelo\Entidades\TomaClase.cs" />
     <Compile Include="Modelo\Entidades\UsaAparato.cs" />
@@ -191,6 +193,7 @@
     </EmbeddedResource>
     <None Include="Properties\DataSources\ControlDeGimnasio.Modelo.Entidades.Aparato.datasource" />
     <None Include="Properties\DataSources\ControlDeGimnasio.Modelo.Entidades.Clase.datasource" />
+    <None Include="Properties\DataSources\ControlDeGimnasio.Modelo.Entidades.Registro.datasource" />
     <None Include="Properties\DataSources\ControlDeGimnasio.Modelo.Entidades.Socio.datasource" />
     <None Include="Properties\DataSources\ControlDeGimnasio.Modelo.Entidades.Usuario.datasource" />
     <None Include="Properties\DataSources\Program.datasource" />

@@ -31,6 +31,7 @@ namespace ControlDeGimnasio.Vista {
             this.txtPass = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
+            this.btnRegistros = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -75,7 +76,7 @@ namespace ControlDeGimnasio.Vista {
             this.button1.BackColor = System.Drawing.Color.Transparent;
             this.button1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Image = global::ControlDeGimnasio.Properties.Resources._30login;
-            this.button1.Location = new System.Drawing.Point(230, 120);
+            this.button1.Location = new System.Drawing.Point(170, 120);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(38, 38);
             this.button1.TabIndex = 4;
@@ -91,12 +92,24 @@ namespace ControlDeGimnasio.Vista {
             this.label3.Size = new System.Drawing.Size(165, 164);
             this.label3.TabIndex = 5;
             // 
+            // btnRegistros
+            // 
+            this.btnRegistros.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistros.Location = new System.Drawing.Point(251, 120);
+            this.btnRegistros.Name = "btnRegistros";
+            this.btnRegistros.Size = new System.Drawing.Size(78, 38);
+            this.btnRegistros.TabIndex = 6;
+            this.btnRegistros.Text = "Ir a ventana de registros";
+            this.btnRegistros.UseVisualStyleBackColor = true;
+            this.btnRegistros.Click += new System.EventHandler(this.btnRegistros_Click);
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightBlue;
             this.ClientSize = new System.Drawing.Size(337, 164);
+            this.Controls.Add(this.btnRegistros);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtPass);
@@ -108,6 +121,7 @@ namespace ControlDeGimnasio.Vista {
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmLogin_FormClosed);
             this.Load += new System.EventHandler(this.frmLogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -122,5 +136,6 @@ namespace ControlDeGimnasio.Vista {
         private System.Windows.Forms.TextBox txtPass;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnRegistros;
     }
 }

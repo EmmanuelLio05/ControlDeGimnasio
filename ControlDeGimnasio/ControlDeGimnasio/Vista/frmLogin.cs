@@ -25,9 +25,8 @@ namespace ControlDeGimnasio.Vista {
                     oUsuario = oDUsuario.Login(txtUser.Text.Trim(), txtPass.Text.Trim());
                     if (oUsuario != null) {
                         this.DialogResult = DialogResult.OK;
-                        this.Close();
                     } else {
-                        System.Windows.Forms.Application.Exit();
+                        MessageBox.Show("Usuario o contraseña incorrecta.", "Mensaje del sistema", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
             } catch (Exception ex) {
@@ -59,6 +58,18 @@ namespace ControlDeGimnasio.Vista {
                 return false;
             }
             return true;
+        }
+
+        private void btnRegistros_Click(object sender, EventArgs e) {
+            frmInOut f = new frmInOut();
+            this.Visible = false;
+            if (f.ShowDialog() != f.DialogResult) {
+                this.Visible = true;
+            }
+        }
+
+        private void frmLogin_FormClosed(object sender, FormClosedEventArgs e) {
+            
         }
     }
 }

@@ -163,6 +163,7 @@ namespace ControlDeGimnasio.Vista {
                 if (txtMonto.Text.Trim().Length > 0) {
                     if (!Decimal.TryParse(txtMonto.Text.Trim(), out decimal d)) {
                         MessageBox.Show("El monto debe ser un numero.", "Mensaje del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        txtMonto.Text = "";
                         txtMonto.Focus();
                     } else if (d < 0) {
                         MessageBox.Show("El monto debe ser un numero positivo.", "Mensaje del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Warning);
