@@ -25,12 +25,19 @@ namespace ControlDeGimnasio.Vista {
         }
 
         private void BusquedaRegistros() {
-            string sSql = "";
+            string sSql = "SELECT * FROM dbo.Registros r INNER JOIN dbo.Socio s ON s.Numero_S = r.Numero_S WHERE ";
+            DateTime odAux;
 
             try {
-
-            } catch (Exception ex) { 
-
+                odAux = (dtpA.Value + new TimeSpan(24, 0, 0));
+                if (odAux >= dtpDe.Value){
+                    sSql += "Hora_Entrada >= '" + dtpDe.Value.Year + "-" + dtpDe.Value.Month + "-" + dtpDe.Value.Day + " " + dtpDe.Value.ToShortTimeString()  + "' AND Hora_Salida <= '" + odAux.Year + "-" + odAux.Month + "-" + odAux.Day + " " + odAux.ToShortTimeString() + "'";
+                }
+                oERegistros = oDRegistro.Busqueda(sSql);
+                dgvRegistros.DataSource = oERegistros;
+                dgvRegistros.Refresh();
+            } catch (Exception ex) {
+                MessageBox.Show("error: " + ex.Message, "BusquedaRegistros");
             }
         }
         #endregion
@@ -41,15 +48,21 @@ namespace ControlDeGimnasio.Vista {
         }
 
         private void frmReportes_Load(object sender, EventArgs e) {
-
+            dgvSocios.DataSource = oDSocio.GetInformacion();
+            dgvAparatos.DataSource = oDAparato.GetInformacion();
+            BusquedaRegistros();
         }
 
         private void frmReportes_KeyDown(object sender, KeyEventArgs e) {
-
+            if (e.KeyCode == Keys.Escape) {
+                this.DialogResult = DialogResult.Cancel;
+                this.Close();
+            }
         }
 
         private void tsbSalir_Click(object sender, EventArgs e) {
-
+            this.DialogResult = DialogResult.Cancel;
+            this.Close();
         }
         #endregion
     }

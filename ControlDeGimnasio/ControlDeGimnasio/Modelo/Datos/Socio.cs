@@ -153,6 +153,35 @@ namespace ControlDeGimnasio.Modelo.Datos {
             }
         }
 
+        public Entidades.Socios GetInformacion() {
+            var oEGeneral = new General();
+            SqlDataReader drSocio;
+            Entidades.Socio oSocio = new Entidades.Socio();
+            Entidades.Socios oSocios = new Entidades.Socios();
+
+            using (var oCon = oEGeneral.Conectar()) {
+                oCon.Open();
+                using (var oComm = new SqlCommand()) {
+                    oComm.Connection = oCon;
+                    oComm.CommandText = "Informacion_Socios";
+                    oComm.CommandType = CommandType.StoredProcedure;
+                    drSocio = oComm.ExecuteReader();
+                    while (drSocio.Read()) {
+                        oSocio = new Entidades.Socio();
+                        oSocio.Inscrito = Convert.IsDBNull(drSocio["E_Suscripcion"]) ? false : Convert.ToBoolean(drSocio["E_Suscripcion"]);
+                        if (oSocio.Inscrito)
+                            oSocio.Nombre = "SI";
+                        else
+                            oSocio.Nombre = "NO";
+                        oSocio.Id = Convert.IsDBNull(drSocio["Num_Clientes"]) ? 0 : Convert.ToInt32(drSocio["Num_Clientes"]);
+                        oSocio.Monto = Convert.IsDBNull(drSocio["Monto_Total"]) ? 0.0m : Convert.ToDecimal(drSocio["Monto_Total"]);
+                        oSocios.Add(oSocio);
+                    }
+                    return oSocios;
+                }
+            }
+        }
+
         private void LlenaEntidad(ref Entidades.Socio oSocio, SqlDataReader drSocio) {
             oSocio.Id = Convert.IsDBNull(drSocio["Numero_S"]) ? 0 : Convert.ToInt32(drSocio["Numero_S"]);
             oSocio.Nombre = Convert.IsDBNull(drSocio["Nombre_S"]) ? "" : Convert.ToString(drSocio["Nombre_S"]).Trim();

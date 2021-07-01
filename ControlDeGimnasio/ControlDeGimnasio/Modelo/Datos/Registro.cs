@@ -82,6 +82,7 @@ namespace ControlDeGimnasio.Modelo.Datos {
                     while (drRegistro.Read()) {
                         oRegistro = new Entidades.Registro();
                         LlenaEntidad(ref oRegistro, drRegistro);
+                        oRegistro.NombreSocio = Convert.IsDBNull(drRegistro["Nombre_S"]) ? "" : Convert.ToString(drRegistro["Nombre_S"]).Trim();
                         oRegistros.Add(oRegistro);
                     }
                     return oRegistros;

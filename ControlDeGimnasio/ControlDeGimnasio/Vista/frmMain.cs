@@ -75,7 +75,8 @@ namespace ControlDeGimnasio.Vista {
         }
 
         private void btnOfertas_Click(object sender, EventArgs e) {
-            
+            frmReportes f = new frmReportes();
+            f.ShowDialog();
         }
 
         private void button5_Click(object sender, EventArgs e) {
