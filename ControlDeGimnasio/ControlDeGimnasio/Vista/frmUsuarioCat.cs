@@ -38,7 +38,10 @@ namespace ControlDeGimnasio.Vista
             frmUsuario f = new frmUsuario();
 
             f.Accion = Modelo.Entidades.Acciones.Registrar;
-            f.ShowDialog();
+            if (f.ShowDialog() == DialogResult.OK) {
+                oEUsuarios = oDUsuario.GetAll();
+                dgvUsuarios.DataSource = oEUsuarios;
+            }
 
         }
 
@@ -49,7 +52,10 @@ namespace ControlDeGimnasio.Vista
             f.Accion = Modelo.Entidades.Acciones.Actualizar;
 
             f.Usuario = Convert.ToInt32(dgvUsuarios.SelectedRows[0].Cells["iDDataGridViewTextBoxColumn"].Value);
-            f.ShowDialog();
+            if (f.ShowDialog() == DialogResult.OK) {
+                oEUsuarios = oDUsuario.GetAll();
+                dgvUsuarios.DataSource = oEUsuarios;
+            }
 
         }
 

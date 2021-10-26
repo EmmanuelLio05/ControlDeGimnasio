@@ -35,14 +35,20 @@ namespace ControlDeGimnasio.Vista {
 
             f.Accion = Modelo.Entidades.Acciones.Actualizar;
             f.ID = Convert.ToInt32(dgvSocios.SelectedRows[0].Cells["idDataGridViewTextBoxColumn"].Value);
-            f.ShowDialog();
+            if (f.ShowDialog() == DialogResult.OK) {
+                oESocios = oDSocio.GetAll();
+                dgvSocios.DataSource = oESocios;
+            }
         }
 
         private void tsbAdd_Click(object sender, EventArgs e) {
             frmSocio f = new frmSocio();
 
             f.Accion = Modelo.Entidades.Acciones.Registrar;
-            f.ShowDialog();
+            if (f.ShowDialog() == DialogResult.OK) {
+                oESocios = oDSocio.GetAll();
+                dgvSocios.DataSource = oESocios;
+            }
         }
 
         private void frmSociosCat_KeyDown(object sender, KeyEventArgs e) {

@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.SqlClient;
+using System.Data.Common.DbConnection;
 using System.Linq;
 using System.Web;
 
-namespace ControlDeGimnasio.Modelo.Datos {
+namespace Modelo.Datos {
     public class Socio {
         public Object Add(Modelo.Entidades.Socio oSocio) {
             var oEGeneral = new General();
@@ -14,17 +14,15 @@ namespace ControlDeGimnasio.Modelo.Datos {
                 oCon.Open();
                 using (var oComm = new SqlCommand()) {
                     oComm.Connection = oCon;
-                    oComm.CommandText = "Socio_Insert";
+                    oComm.CommandText = "Socios_Insert";
                     oComm.CommandType = CommandType.StoredProcedure;
-                    //oComm.Parameters.AddWithValue("@Numero_S", oSocio.Id);
-                    oComm.Parameters.AddWithValue("@Nombre_S", oSocio.Nombre);
-                    oComm.Parameters.AddWithValue("@Paterno_S", oSocio.Materno);
-                    oComm.Parameters.AddWithValue("@Materno_S", oSocio.Paterno);
-                    //oComm.Parameters.AddWithValue("@Imagen_S", null);
-                    oComm.Parameters.AddWithValue("@Direccion_S", oSocio.Direccion);
-                    oComm.Parameters.AddWithValue("@Telefono_S", oSocio.Telefono);
-                    oComm.Parameters.AddWithValue("@Fecha_I", oSocio.FechaInscripcion);
-                    oComm.Parameters.AddWithValue("@E_Suscripcion", oSocio.Inscrito);
+                    oComm.Parameters.AddWithValue("@Numero_S", oSocio.S);
+                    oComm.Parameters.AddWithValue("@Nombre_S", oSocio.S);
+                    oComm.Parameters.AddWithValue("@Imagen_S", oSocio.S);
+                    oComm.Parameters.AddWithValue("@Direccion_S", oSocio.S);
+                    oComm.Parameters.AddWithValue("@Telefono_S", oSocio.S);
+                    oComm.Parameters.AddWithValue("@Fecha_I", oSocio.I);
+                    oComm.Parameters.AddWithValue("@E_Suscripcion", oSocio.Suscripcion);
                     oComm.Parameters.AddWithValue("@Monto", oSocio.Monto);
                     return oComm.ExecuteScalar();
                 }
@@ -38,17 +36,15 @@ namespace ControlDeGimnasio.Modelo.Datos {
                 oCon.Open();
                 using (var oComm = new SqlCommand()) {
                     oComm.Connection = oCon;
-                    oComm.CommandText = "Socio_Update";
+                    oComm.CommandText = "Socios_Update";
                     oComm.CommandType = CommandType.StoredProcedure;
-                    oComm.Parameters.AddWithValue("@Numero_S", oSocio.Id);
-                    oComm.Parameters.AddWithValue("@Nombre_S", oSocio.Nombre);
-                    oComm.Parameters.AddWithValue("@Paterno_S", oSocio.Materno);
-                    oComm.Parameters.AddWithValue("@Materno_S", oSocio.Paterno);
-                    //oComm.Parameters.AddWithValue("@Imagen_S", oSocio.S);
-                    oComm.Parameters.AddWithValue("@Direccion_S", oSocio.Direccion);
-                    oComm.Parameters.AddWithValue("@Telefono_S", oSocio.Telefono);
-                    oComm.Parameters.AddWithValue("@Fecha_I", oSocio.FechaInscripcion);
-                    oComm.Parameters.AddWithValue("@E_Suscripcion", oSocio.Inscrito);
+                    oComm.Parameters.AddWithValue("@Numero_S", oSocio.S);
+                    oComm.Parameters.AddWithValue("@Nombre_S", oSocio.S);
+                    oComm.Parameters.AddWithValue("@Imagen_S", oSocio.S);
+                    oComm.Parameters.AddWithValue("@Direccion_S", oSocio.S);
+                    oComm.Parameters.AddWithValue("@Telefono_S", oSocio.S);
+                    oComm.Parameters.AddWithValue("@Fecha_I", oSocio.I);
+                    oComm.Parameters.AddWithValue("@E_Suscripcion", oSocio.Suscripcion);
                     oComm.Parameters.AddWithValue("@Monto", oSocio.Monto);
                     return oComm.ExecuteScalar();
                 }
@@ -62,7 +58,7 @@ namespace ControlDeGimnasio.Modelo.Datos {
                 oCon.Open();
                 using (var oComm = new SqlCommand()) {
                     oComm.Connection = oCon;
-                    oComm.CommandText = "Socio_Disable";
+                    oComm.CommandText = "Socios_Delete";
                     oComm.CommandType = CommandType.StoredProcedure;
                     oComm.Parameters.AddWithValue("@Numero_S", Numero_S);
                     oComm.ExecuteScalar();
@@ -77,10 +73,24 @@ namespace ControlDeGimnasio.Modelo.Datos {
                 oCon.Open();
                 using (var oComm = new SqlCommand()) {
                     oComm.Connection = oCon;
-                    oComm.CommandText = "Socio_GetOne";
+                    oComm.CommandText = "Socios_SelectOne";
                     oComm.CommandType = CommandType.StoredProcedure;
                     oComm.Parameters.AddWithValue("@Numero_S", Numero_S);
                     return oComm.ExecuteReader().HasRows;
+                }
+            }
+        }
+
+        public object SelectMaxId() {
+            var oEGeneral = new General();
+
+            using (var oCon = oEGeneral.Conectar()) {
+                oCon.Open();
+                using (var oComm = new SqlCommand()) {
+                    oComm.Connection = oCon;
+                    oComm.CommandText = "Socios_SelectMaxId";
+                    oComm.CommandType = CommandType.StoredProcedure;
+                    return oComm.ExecuteScalar();
                 }
             }
         }
@@ -94,7 +104,7 @@ namespace ControlDeGimnasio.Modelo.Datos {
                 oCon.Open();
                 using (var oComm = new SqlCommand()) {
                     oComm.Connection = oCon;
-                    oComm.CommandText = "Socio_GetOne";
+                    oComm.CommandText = "Socios_SelectOne";
                     oComm.CommandType = CommandType.StoredProcedure;
                     oComm.Parameters.AddWithValue("@Numero_S", Numero_S);
                     drSocio = oComm.ExecuteReader();
@@ -102,6 +112,31 @@ namespace ControlDeGimnasio.Modelo.Datos {
                         LlenaEntidad(ref oSocio, drSocio);
                         return oSocio;
                     } else return null;
+                }
+            }
+        }
+
+        public Entidades.Socios GetAll(int nHoja, int nNoRegistros = 50) {
+            var oEGeneral = new General();
+            SqlDataReader drSocio;
+            Entidades.Socio oSocio = new Entidades.Socio();
+            Entidades.Socios oSocios = new Entidades.Socios();
+
+            using (var oCon = oEGeneral.Conectar()) {
+                oCon.Open();
+                using (var oComm = new SqlCommand()) {
+                    oComm.Connection = oCon;
+                    oComm.CommandText = "Socios_SelectAll";
+                    oComm.Parameters.AddWithValue("@Numero_pagina", nHoja);
+                    oComm.Parameters.AddWithValue("@Numero_NoRegistros", nNoRegistros);
+                    oComm.CommandType = CommandType.StoredProcedure;
+                    drSocio = oComm.ExecuteReader();
+                    while (drSocio.Read()) {
+                        oSocio = new Entidades.Socio();
+                        LlenaEntidad(ref oSocio, drSocio);
+                        oSocios.Add(oSocio);
+                    }
+                    return oSocios;
                 }
             }
         }
@@ -140,7 +175,9 @@ namespace ControlDeGimnasio.Modelo.Datos {
                 oCon.Open();
                 using (var oComm = new SqlCommand()) {
                     oComm.Connection = oCon;
-                    oComm.CommandText = "Socio_GetAll";
+                    oComm.CommandText = "Socios_SelectAll";
+                    oComm.Parameters.AddWithValue("@Numero_pagina", 1);
+                    oComm.Parameters.AddWithValue("@Numero_NoRegistros", 2000);
                     oComm.CommandType = CommandType.StoredProcedure;
                     drSocio = oComm.ExecuteReader();
                     while (drSocio.Read()) {
@@ -153,46 +190,45 @@ namespace ControlDeGimnasio.Modelo.Datos {
             }
         }
 
-        public Entidades.Socios GetInformacion() {
+        public object CountPaginas(int nLogitud = 50) {
             var oEGeneral = new General();
-            SqlDataReader drSocio;
-            Entidades.Socio oSocio = new Entidades.Socio();
-            Entidades.Socios oSocios = new Entidades.Socios();
 
             using (var oCon = oEGeneral.Conectar()) {
                 oCon.Open();
                 using (var oComm = new SqlCommand()) {
                     oComm.Connection = oCon;
-                    oComm.CommandText = "Informacion_Socios";
+                    oComm.CommandText = "Socios_SelectNoHojas";
                     oComm.CommandType = CommandType.StoredProcedure;
-                    drSocio = oComm.ExecuteReader();
-                    while (drSocio.Read()) {
-                        oSocio = new Entidades.Socio();
-                        oSocio.Inscrito = Convert.IsDBNull(drSocio["E_Suscripcion"]) ? false : Convert.ToBoolean(drSocio["E_Suscripcion"]);
-                        if (oSocio.Inscrito)
-                            oSocio.Nombre = "SI";
-                        else
-                            oSocio.Nombre = "NO";
-                        oSocio.Id = Convert.IsDBNull(drSocio["Num_Clientes"]) ? 0 : Convert.ToInt32(drSocio["Num_Clientes"]);
-                        oSocio.Monto = Convert.IsDBNull(drSocio["Monto_Total"]) ? 0.0m : Convert.ToDecimal(drSocio["Monto_Total"]);
-                        oSocios.Add(oSocio);
-                    }
-                    return oSocios;
+                    oComm.Parameters.AddWithValue("@Numero_NoRegistros", nLogitud);
+                    return oComm.ExecuteScalar();
+                }
+            }
+        }
+
+        public object CountPaginas(String sSql) {
+            var oEGeneral = new General();
+
+            using (var oCon = oEGeneral.Conectar()) {
+                oCon.Open();
+                using (var oComm = new SqlCommand()) {
+                    oComm.Connection = oCon;
+                    oComm.CommandText = "Ejecuta_SQL";
+                    oComm.CommandType = CommandType.StoredProcedure;
+                    oComm.Parameters.AddWithValue("@sql", sSql);
+                    return oComm.ExecuteScalar();
                 }
             }
         }
 
         private void LlenaEntidad(ref Entidades.Socio oSocio, SqlDataReader drSocio) {
-            oSocio.Id = Convert.IsDBNull(drSocio["Numero_S"]) ? 0 : Convert.ToInt32(drSocio["Numero_S"]);
-            oSocio.Nombre = Convert.IsDBNull(drSocio["Nombre_S"]) ? "" : Convert.ToString(drSocio["Nombre_S"]).Trim();
-            oSocio.Paterno = Convert.IsDBNull(drSocio["Paterno_S"]) ? "" : Convert.ToString(drSocio["Paterno_S"]).Trim();
-            oSocio.Materno = Convert.IsDBNull(drSocio["Materno_S"]) ? "" : Convert.ToString(drSocio["Materno_S"]).Trim();
-            //oSocio.S = Convert.IsDBNull(drSocio["Imagen_S"]) ? ERROR : Convert.ToERROR(drSocio["Imagen_S"]);
-            oSocio.Direccion = Convert.IsDBNull(drSocio["Direccion_S"]) ? "" : Convert.ToString(drSocio["Direccion_S"]).Trim();
-            oSocio.Telefono = Convert.IsDBNull(drSocio["Telefono_S"]) ? "" : Convert.ToString(drSocio["Telefono_S"]).Trim();
-            oSocio.FechaInscripcion = Convert.IsDBNull(drSocio["Fecha_I"]) ? new DateTime(1900, 01, 01) : Convert.ToDateTime(drSocio["Fecha_I"]);
-            oSocio.Inscrito = Convert.IsDBNull(drSocio["E_Suscripcion"]) ? false : Convert.ToBoolean(drSocio["E_Suscripcion"]);
-            oSocio.Monto = Convert.IsDBNull(drSocio["Monto"]) ? 0.0m : Convert.ToDecimal(drSocio["Monto"]);
+            oSocio.S = Convert.IsDBNull(drSocio["Numero_S"]) ? 0 : Convert.ToInt32(drSocio["Numero_S"]);
+            oSocio.S = Convert.IsDBNull(drSocio["Nombre_S"]) ? "" : Convert.ToString(drSocio["Nombre_S"]).Trim();
+            oSocio.S = Convert.IsDBNull(drSocio["Imagen_S"]) ? ERROR : Convert.ToERROR(drSocio["Imagen_S"]);
+            oSocio.S = Convert.IsDBNull(drSocio["Direccion_S"]) ? "" : Convert.ToString(drSocio["Direccion_S"]).Trim();
+            oSocio.S = Convert.IsDBNull(drSocio["Telefono_S"]) ? "" : Convert.ToString(drSocio["Telefono_S"]).Trim();
+            oSocio.I = Convert.IsDBNull(drSocio["Fecha_I"]) ? new DateTime(1900, 01, 01) : Convert.ToDateTime(drSocio["Fecha_I"]);
+            oSocio.Suscripcion = Convert.IsDBNull(drSocio["E_Suscripcion"]) ? false : Convert.Tobool(drSocio["E_Suscripcion"]);
+            oSocio.Monto = Convert.IsDBNull(drSocio["Monto"]) ? 0.0f : Convert.ToDouble(drSocio["Monto"]);
         }
     }
 }
