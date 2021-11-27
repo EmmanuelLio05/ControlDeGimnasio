@@ -69,6 +69,7 @@ namespace ControlDeGimnasio.Vista {
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(58, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(42, 18);
@@ -78,6 +79,7 @@ namespace ControlDeGimnasio.Vista {
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(58, 67);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(57, 18);
@@ -102,6 +104,7 @@ namespace ControlDeGimnasio.Vista {
             // chkEstado
             // 
             this.chkEstado.AutoSize = true;
+            this.chkEstado.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkEstado.Location = new System.Drawing.Point(58, 125);
             this.chkEstado.Name = "chkEstado";
             this.chkEstado.Size = new System.Drawing.Size(68, 22);
@@ -114,6 +117,7 @@ namespace ControlDeGimnasio.Vista {
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightBlue;
             this.ClientSize = new System.Drawing.Size(236, 154);
             this.Controls.Add(this.chkEstado);
             this.Controls.Add(this.txtAparato);

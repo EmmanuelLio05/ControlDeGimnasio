@@ -73,7 +73,7 @@ namespace ControlDeGimnasio.Vista {
             this.dgvSocios.Name = "dgvSocios";
             this.dgvSocios.ReadOnly = true;
             this.dgvSocios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvSocios.Size = new System.Drawing.Size(618, 536);
+            this.dgvSocios.Size = new System.Drawing.Size(936, 338);
             this.dgvSocios.TabIndex = 3;
             // 
             // idDataGridViewTextBoxColumn
@@ -155,7 +155,7 @@ namespace ControlDeGimnasio.Vista {
             this.tsbSalir});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(53, 536);
+            this.toolStrip1.Size = new System.Drawing.Size(53, 338);
             this.toolStrip1.TabIndex = 4;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -201,7 +201,7 @@ namespace ControlDeGimnasio.Vista {
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(671, 536);
+            this.ClientSize = new System.Drawing.Size(989, 338);
             this.Controls.Add(this.dgvSocios);
             this.Controls.Add(this.toolStrip1);
             this.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -210,7 +210,7 @@ namespace ControlDeGimnasio.Vista {
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmSociosCat";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmSociosCat";
+            this.Text = "Catalogo de socios";
             this.Load += new System.EventHandler(this.frmSociosCat_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmSociosCat_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSocios)).EndInit();

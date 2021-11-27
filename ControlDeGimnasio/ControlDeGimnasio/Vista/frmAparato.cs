@@ -60,13 +60,13 @@ namespace ControlDeGimnasio.Vista {
 
         private void CargarDatos() {
             txtAparato.Text = oEAparato.Descripcion;
-            txtClave.Text = oEAparato.Id.ToString();
+            //txtClave.Text = oEAparato.Id.ToString();
             chkEstado.Checked = oEAparato.Estado;
         }
 
         private void PrepararDatos() {
             oEAparato.Descripcion = txtAparato.Text;
-            oEAparato.Id = Convert.ToInt32(txtClave.Text);
+            //oEAparato.Id = Convert.ToInt32(txtClave.Text);
             oEAparato.Estado = chkEstado.Checked;
         }
         #endregion

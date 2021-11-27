@@ -9,21 +9,22 @@ using System.Threading.Tasks;
 namespace ControlDeGimnasio.Modelo.Datos {
     public class Usuario {
 
-        public Object Add(Entidades.Usuario oUsuario) {
+        public Object Add(Modelo.Entidades.Usuario oUsuario) {
             var oEGeneral = new General();
 
             using (var oCon = oEGeneral.Conectar()) {
                 oCon.Open();
                 using (var oComm = new SqlCommand()) {
-                    oComm.CommandType = CommandType.StoredProcedure;
+                    oComm.Connection = oCon;
                     oComm.CommandText = "Usuario_Insert";
-                    oComm.Parameters.AddWithValue("@nID", oUsuario.ID);   
+                    oComm.CommandType = CommandType.StoredProcedure;
+                    //oComm.Parameters.AddWithValue("@nID", oUsuario.ID);   
                     oComm.Parameters.AddWithValue("@Nombre_U", oUsuario.Nombre);
                     oComm.Parameters.AddWithValue("@Contraseña_U", oUsuario.Contraseña);
                     oComm.Parameters.AddWithValue("@Profesion_U", oUsuario.Profesion);
                     oComm.Parameters.AddWithValue("@Direccion_U", oUsuario.Direccion);
                     oComm.Parameters.AddWithValue("@Telefono_U", oUsuario.Telefono);
-                    oComm.Parameters.AddWithValue("@Telefono_U", oUsuario.Telefono);
+                    oComm.Parameters.AddWithValue("@Tipo_U", oUsuario.Tipo);
                     return oComm.ExecuteScalar();
                 }
             }

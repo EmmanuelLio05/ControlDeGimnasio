@@ -58,12 +58,15 @@ namespace ControlDeGimnasio.Vista {
             this.dtpHora.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.dtpHora.Location = new System.Drawing.Point(51, 146);
             this.dtpHora.Name = "dtpHora";
-            this.dtpHora.Size = new System.Drawing.Size(90, 26);
+            this.dtpHora.Size = new System.Drawing.Size(124, 26);
             this.dtpHora.TabIndex = 8;
+            this.dtpHora.Value = new System.DateTime(2021, 10, 26, 1, 16, 13, 0);
+            this.dtpHora.ValueChanged += new System.EventHandler(this.dtpHora_ValueChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(51, 5);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(59, 18);
@@ -73,6 +76,7 @@ namespace ControlDeGimnasio.Vista {
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(173, 5);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(80, 18);
@@ -82,6 +86,7 @@ namespace ControlDeGimnasio.Vista {
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(51, 63);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(77, 18);
@@ -91,6 +96,7 @@ namespace ControlDeGimnasio.Vista {
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(51, 121);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(37, 18);
@@ -141,6 +147,7 @@ namespace ControlDeGimnasio.Vista {
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightBlue;
             this.ClientSize = new System.Drawing.Size(304, 181);
             this.Controls.Add(this.cmbEntrenador);
             this.Controls.Add(this.panel1);

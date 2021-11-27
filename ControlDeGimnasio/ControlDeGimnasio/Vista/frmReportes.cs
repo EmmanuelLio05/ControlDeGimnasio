@@ -31,7 +31,8 @@ namespace ControlDeGimnasio.Vista {
             try {
                 odAux = (dtpA.Value + new TimeSpan(24, 0, 0));
                 if (odAux >= dtpDe.Value){
-                    sSql += "Hora_Entrada >= '" + dtpDe.Value.Year + "-" + dtpDe.Value.Month + "-" + dtpDe.Value.Day + " " + dtpDe.Value.ToShortTimeString()  + "' AND Hora_Salida <= '" + odAux.Year + "-" + odAux.Month + "-" + odAux.Day + " " + odAux.ToShortTimeString() + "'";
+                    //sSql += "Hora_Entrada >= '" + dtpDe.Value.Year + "-" + dtpDe.Value.Month + "-" + dtpDe.Value.Day + " " + dtpDe.Value.ToShortTimeString()  + "' AND Hora_Salida <= '" + odAux.Year + "-" + odAux.Month + "-" + odAux.Day + " " + odAux.ToShortTimeString() + "'";
+                    sSql += "Hora_Entrada >= '" + dtpDe.Value.Year + "-" + dtpDe.Value.Month + "-" + dtpDe.Value.Day + " "   + "' AND Hora_Salida <= '" + odAux.Year + "-" + odAux.Month + "-" + odAux.Day + " " +  "'";
                 }
                 oERegistros = oDRegistro.Busqueda(sSql);
                 dgvRegistros.DataSource = oERegistros;

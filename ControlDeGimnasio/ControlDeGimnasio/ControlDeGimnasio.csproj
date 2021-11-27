@@ -285,5 +285,20 @@
   <ItemGroup>
     <None Include="Resources\30searchblack.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\62458380_1347845758700401_2960461239907516416_n_adobespark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngegg %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login imagen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login imagen 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\36779.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

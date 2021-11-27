@@ -134,6 +134,23 @@ namespace ControlDeGimnasio.Vista
                 return false;
             }
 
+            //-----------------
+
+            if (txtTipo.Text != null)
+            {
+                if (txtTipo.Text.Trim().Length == 0)
+                {
+                    MessageBox.Show("Debe indicar el tipo de usuario", "Mensaje del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return false;
+                }
+            }
+            else
+            {
+                MessageBox.Show("Debe indicar el tipo de usuario.", "Mensaje del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+            //-----------------------
+
             return true;
         }
 
@@ -144,6 +161,7 @@ namespace ControlDeGimnasio.Vista
             txtDireccion.Text = oEUsuario.Direccion;
             txtProfesion.Text = oEUsuario.Profesion;
             txtTelefono.Text = oEUsuario.Telefono;
+            txtTipo.Text = oEUsuario.Tipo;
 
         }
 
@@ -154,6 +172,7 @@ namespace ControlDeGimnasio.Vista
             oEUsuario.Direccion = txtDireccion.Text;
             oEUsuario.Profesion = txtProfesion.Text;
             oEUsuario.Telefono = txtTelefono.Text;
+            oEUsuario.Tipo = txtTipo.Text;
 
         }
 
@@ -229,6 +248,9 @@ namespace ControlDeGimnasio.Vista
 
         }
 
-       
+        private void txtTipo_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

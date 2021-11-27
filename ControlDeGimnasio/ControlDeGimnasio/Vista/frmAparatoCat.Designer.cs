@@ -28,17 +28,17 @@ namespace ControlDeGimnasio.Vista {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAparatoCat));
             this.dgvAparatos = new System.Windows.Forms.DataGridView();
-            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.estadoDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.descripcionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bsAparato = new System.Windows.Forms.BindingSource(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnActulizar = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnRegistrar = new System.Windows.Forms.Button();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.estadoDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.descripcionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bsAparato = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgvAparatos)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bsAparato)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bsAparato)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvAparatos
@@ -61,33 +61,8 @@ namespace ControlDeGimnasio.Vista {
             this.dgvAparatos.Name = "dgvAparatos";
             this.dgvAparatos.ReadOnly = true;
             this.dgvAparatos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvAparatos.Size = new System.Drawing.Size(376, 599);
+            this.dgvAparatos.Size = new System.Drawing.Size(346, 216);
             this.dgvAparatos.TabIndex = 4;
-            // 
-            // idDataGridViewTextBoxColumn
-            // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            this.idDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // estadoDataGridViewCheckBoxColumn
-            // 
-            this.estadoDataGridViewCheckBoxColumn.DataPropertyName = "Estado";
-            this.estadoDataGridViewCheckBoxColumn.HeaderText = "Estado";
-            this.estadoDataGridViewCheckBoxColumn.Name = "estadoDataGridViewCheckBoxColumn";
-            this.estadoDataGridViewCheckBoxColumn.ReadOnly = true;
-            // 
-            // descripcionDataGridViewTextBoxColumn
-            // 
-            this.descripcionDataGridViewTextBoxColumn.DataPropertyName = "Descripcion";
-            this.descripcionDataGridViewTextBoxColumn.HeaderText = "Descripcion";
-            this.descripcionDataGridViewTextBoxColumn.Name = "descripcionDataGridViewTextBoxColumn";
-            this.descripcionDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // bsAparato
-            // 
-            this.bsAparato.DataSource = typeof(ControlDeGimnasio.Modelo.Entidades.Aparato);
             // 
             // panel1
             // 
@@ -99,7 +74,7 @@ namespace ControlDeGimnasio.Vista {
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(52, 599);
+            this.panel1.Size = new System.Drawing.Size(52, 216);
             this.panel1.TabIndex = 3;
             // 
             // btnActulizar
@@ -135,11 +110,36 @@ namespace ControlDeGimnasio.Vista {
             this.btnRegistrar.UseVisualStyleBackColor = true;
             this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // estadoDataGridViewCheckBoxColumn
+            // 
+            this.estadoDataGridViewCheckBoxColumn.DataPropertyName = "Estado";
+            this.estadoDataGridViewCheckBoxColumn.HeaderText = "Estado";
+            this.estadoDataGridViewCheckBoxColumn.Name = "estadoDataGridViewCheckBoxColumn";
+            this.estadoDataGridViewCheckBoxColumn.ReadOnly = true;
+            // 
+            // descripcionDataGridViewTextBoxColumn
+            // 
+            this.descripcionDataGridViewTextBoxColumn.DataPropertyName = "Descripcion";
+            this.descripcionDataGridViewTextBoxColumn.HeaderText = "Descripcion";
+            this.descripcionDataGridViewTextBoxColumn.Name = "descripcionDataGridViewTextBoxColumn";
+            this.descripcionDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // bsAparato
+            // 
+            this.bsAparato.DataSource = typeof(ControlDeGimnasio.Modelo.Entidades.Aparato);
+            // 
             // frmAparatoCat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(428, 599);
+            this.ClientSize = new System.Drawing.Size(398, 216);
             this.Controls.Add(this.dgvAparatos);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -152,8 +152,8 @@ namespace ControlDeGimnasio.Vista {
             this.Load += new System.EventHandler(this.frmAparatoCat_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmAparatoCat_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.dgvAparatos)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bsAparato)).EndInit();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.bsAparato)).EndInit();
             this.ResumeLayout(false);
 
         }

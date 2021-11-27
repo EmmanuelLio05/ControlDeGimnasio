@@ -59,7 +59,7 @@ namespace ControlDeGimnasio.Vista {
                 MessageBox.Show("Debe indicar el entrenador.", "Mensaje del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
             }
-            if (dtpHora.Value.ToLocalTime() != new DateTime(1900,1,1,0,0,0)) {
+            if (dtpHora.Value.ToLocalTime() == new DateTime(1900, 01, 01, 00, 00, 00)) {
                 MessageBox.Show("Debe indicar la hora.", "Mensaje del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
             }
@@ -133,6 +133,11 @@ namespace ControlDeGimnasio.Vista {
         #endregion
 
         private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void dtpHora_ValueChanged(object sender, EventArgs e)
         {
 
         }

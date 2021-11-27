@@ -19,7 +19,7 @@ namespace ControlDeGimnasio.Modelo.Datos {
                     oComm.CommandType = CommandType.StoredProcedure;
                     oComm.Parameters.AddWithValue("@Estado_A", oAparato.Estado);
                     oComm.Parameters.AddWithValue("@Descripcion_A", oAparato.Descripcion);
-                    oComm.Parameters.AddWithValue("@Num_A", oAparato.Id);
+                    //oComm.Parameters.AddWithValue("@Num_A", oAparato.Id);
                     return oComm.ExecuteScalar();
                 }
             }

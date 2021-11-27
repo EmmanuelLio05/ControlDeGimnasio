@@ -118,73 +118,88 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="14038073941582872993-5122" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\14038073941582872993-5122.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pngtree-tools-icon-design-vector-png-image_1705775" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pngtree-tools-icon-design-vector-png-image_1705775.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="24close" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\24close.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="30floppydisk" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\30floppydisk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="30login" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\30login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="150clase" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\150clase.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="150usuario" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\150usuario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="30login" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\30login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cancel" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cancel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="150Aparato" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\150Aparato.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="30plus" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\30plus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="14038073941582872993-5121" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\14038073941582872993-5121.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="30pencil" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\30pencil.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="150login" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\150login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="50about" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\50about.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="gum-" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\gum-.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="50logout" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\50logout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="150socios" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\150socios.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="free-user-group-icon-296-thumb" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\free-user-group-icon-296-thumb.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="24close" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\24close.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="save--v2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\save--v2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="14038073941582872993-512" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\14038073941582872993-512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="30searchblack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\30searchblack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="50about" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\50about.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="30floppydisk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\30floppydisk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="login imagen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\login imagen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="150socios" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\150socios.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="150Aparato" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\150Aparato.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cancel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cancel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="150usuario" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\150usuario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="150reporte" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\150reporte.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="pngegg (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pngegg (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="150login" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\150login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="login imagen 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\login imagen 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="14038073941582872993-5122" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\14038073941582872993-5122.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="493ea17829d3f4730f05df8c80fc1a05" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\493ea17829d3f4730f05df8c80fc1a05.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="30searchblack" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\30searchblack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="14038073941582872993-5121" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\14038073941582872993-5121.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="50logout" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\50logout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="14038073941582872993-512" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\14038073941582872993-512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="62458380_1347845758700401_2960461239907516416_n_adobespark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\62458380_1347845758700401_2960461239907516416_n_adobespark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="30plus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\30plus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gum-" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gum-.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pngtree-tools-icon-design-vector-png-image_1705775" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pngtree-tools-icon-design-vector-png-image_1705775.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="free-user-group-icon-296-thumb" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\free-user-group-icon-296-thumb.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="36779" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\36779.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

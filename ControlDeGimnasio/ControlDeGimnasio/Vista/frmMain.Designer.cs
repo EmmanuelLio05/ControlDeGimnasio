@@ -115,8 +115,10 @@ namespace ControlDeGimnasio.Vista {
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(50, 13);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(50, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(472, 56);
             this.label1.TabIndex = 0;
@@ -126,7 +128,7 @@ namespace ControlDeGimnasio.Vista {
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DimGray;
+            this.BackColor = System.Drawing.Color.SteelBlue;
             this.ClientSize = new System.Drawing.Size(576, 426);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnLogout);
@@ -136,10 +138,11 @@ namespace ControlDeGimnasio.Vista {
             this.Controls.Add(this.btnClases);
             this.Controls.Add(this.btnUsuarios);
             this.Controls.Add(this.btnReportes);
+            this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Main";
+            this.Text = "Control de gimnasio";
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

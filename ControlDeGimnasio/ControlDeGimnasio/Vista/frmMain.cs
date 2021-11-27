@@ -36,6 +36,7 @@ namespace ControlDeGimnasio.Vista {
         #region Eventos
         private void frmMain_Load(object sender, EventArgs e) {
             frmLogin fLogin = new frmLogin();
+            
 
             try {
                 this.Visible = false;
@@ -49,12 +50,14 @@ namespace ControlDeGimnasio.Vista {
                         break;
                 }
                 AgregarToolTips();
-            } catch (Exception ex) { 
+            } catch (Exception ex) {
 
             }
         }
 
+
         private void button4_Click(object sender, EventArgs e) {
+
             frmAparatoCat f = new frmAparatoCat();
             f.ShowDialog();
         }
@@ -63,7 +66,7 @@ namespace ControlDeGimnasio.Vista {
             frmUsuarioCat f = new frmUsuarioCat();
             f.ShowDialog();
         }
-
+        
         private void button1_Click(object sender, EventArgs e) {
             frmSociosCat f = new frmSociosCat();
             f.ShowDialog();
@@ -85,8 +88,10 @@ namespace ControlDeGimnasio.Vista {
         }
 
         private void button6_Click(object sender, EventArgs e) {
-            this.DialogResult = DialogResult.OK;
-            this.Close();
+            //this.DialogResult = DialogResult.OK;
+            //this.Close();
+            frmLogin f = new frmLogin();
+            f.ShowDialog();
         }
         #endregion
     }

@@ -33,18 +33,10 @@ namespace ControlDeGimnasio.Vista {
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dgvAparatos = new System.Windows.Forms.DataGridView();
-            this.bsAparatos = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dgvSocios = new System.Windows.Forms.DataGridView();
-            this.bsSocios = new System.Windows.Forms.BindingSource(this.components);
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.dgvRegistros = new System.Windows.Forms.DataGridView();
-            this.horaSalidaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.horaEntradaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.socioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nombreSocioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bsRegistros = new System.Windows.Forms.BindingSource(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -55,22 +47,30 @@ namespace ControlDeGimnasio.Vista {
             this.tsbSalir = new System.Windows.Forms.ToolStripButton();
             this.descripcionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bsAparatos = new System.Windows.Forms.BindingSource(this.components);
             this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.montoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bsSocios = new System.Windows.Forms.BindingSource(this.components);
+            this.horaSalidaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.horaEntradaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.socioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombreSocioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bsRegistros = new System.Windows.Forms.BindingSource(this.components);
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAparatos)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bsAparatos)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSocios)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bsSocios)).BeginInit();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRegistros)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bsRegistros)).BeginInit();
             this.panel1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bsAparatos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsSocios)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsRegistros)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -82,7 +82,7 @@ namespace ControlDeGimnasio.Vista {
             this.tabControl1.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(726, 573);
+            this.tabControl1.Size = new System.Drawing.Size(474, 625);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -93,7 +93,7 @@ namespace ControlDeGimnasio.Vista {
             this.tabPage1.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage1.Size = new System.Drawing.Size(718, 542);
+            this.tabPage1.Size = new System.Drawing.Size(453, 594);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Generales";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -106,7 +106,7 @@ namespace ControlDeGimnasio.Vista {
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Size = new System.Drawing.Size(710, 260);
+            this.groupBox2.Size = new System.Drawing.Size(445, 312);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Aparatos";
@@ -130,12 +130,8 @@ namespace ControlDeGimnasio.Vista {
             this.dgvAparatos.Name = "dgvAparatos";
             this.dgvAparatos.ReadOnly = true;
             this.dgvAparatos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvAparatos.Size = new System.Drawing.Size(702, 233);
+            this.dgvAparatos.Size = new System.Drawing.Size(437, 285);
             this.dgvAparatos.TabIndex = 0;
-            // 
-            // bsAparatos
-            // 
-            this.bsAparatos.DataSource = typeof(ControlDeGimnasio.Modelo.Entidades.Aparato);
             // 
             // groupBox1
             // 
@@ -145,7 +141,7 @@ namespace ControlDeGimnasio.Vista {
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(710, 274);
+            this.groupBox1.Size = new System.Drawing.Size(445, 274);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Socios";
@@ -170,12 +166,8 @@ namespace ControlDeGimnasio.Vista {
             this.dgvSocios.Name = "dgvSocios";
             this.dgvSocios.ReadOnly = true;
             this.dgvSocios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvSocios.Size = new System.Drawing.Size(702, 247);
+            this.dgvSocios.Size = new System.Drawing.Size(437, 247);
             this.dgvSocios.TabIndex = 0;
-            // 
-            // bsSocios
-            // 
-            this.bsSocios.DataSource = typeof(ControlDeGimnasio.Modelo.Entidades.Socio);
             // 
             // tabPage2
             // 
@@ -185,7 +177,7 @@ namespace ControlDeGimnasio.Vista {
             this.tabPage2.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage2.Size = new System.Drawing.Size(718, 542);
+            this.tabPage2.Size = new System.Drawing.Size(466, 594);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Entradas y salidas";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -212,47 +204,8 @@ namespace ControlDeGimnasio.Vista {
             this.dgvRegistros.Name = "dgvRegistros";
             this.dgvRegistros.ReadOnly = true;
             this.dgvRegistros.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvRegistros.Size = new System.Drawing.Size(710, 473);
+            this.dgvRegistros.Size = new System.Drawing.Size(458, 525);
             this.dgvRegistros.TabIndex = 0;
-            // 
-            // horaSalidaDataGridViewTextBoxColumn
-            // 
-            this.horaSalidaDataGridViewTextBoxColumn.DataPropertyName = "HoraSalida";
-            this.horaSalidaDataGridViewTextBoxColumn.HeaderText = "HoraSalida";
-            this.horaSalidaDataGridViewTextBoxColumn.Name = "horaSalidaDataGridViewTextBoxColumn";
-            this.horaSalidaDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // horaEntradaDataGridViewTextBoxColumn
-            // 
-            this.horaEntradaDataGridViewTextBoxColumn.DataPropertyName = "HoraEntrada";
-            this.horaEntradaDataGridViewTextBoxColumn.HeaderText = "HoraEntrada";
-            this.horaEntradaDataGridViewTextBoxColumn.Name = "horaEntradaDataGridViewTextBoxColumn";
-            this.horaEntradaDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // socioDataGridViewTextBoxColumn
-            // 
-            this.socioDataGridViewTextBoxColumn.DataPropertyName = "Socio";
-            this.socioDataGridViewTextBoxColumn.HeaderText = "Socio";
-            this.socioDataGridViewTextBoxColumn.Name = "socioDataGridViewTextBoxColumn";
-            this.socioDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // nombreSocioDataGridViewTextBoxColumn
-            // 
-            this.nombreSocioDataGridViewTextBoxColumn.DataPropertyName = "NombreSocio";
-            this.nombreSocioDataGridViewTextBoxColumn.HeaderText = "NombreSocio";
-            this.nombreSocioDataGridViewTextBoxColumn.Name = "nombreSocioDataGridViewTextBoxColumn";
-            this.nombreSocioDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // iDDataGridViewTextBoxColumn
-            // 
-            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
-            this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
-            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
-            this.iDDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // bsRegistros
-            // 
-            this.bsRegistros.DataSource = typeof(ControlDeGimnasio.Modelo.Entidades.Registro);
             // 
             // panel1
             // 
@@ -264,7 +217,7 @@ namespace ControlDeGimnasio.Vista {
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(710, 61);
+            this.panel1.Size = new System.Drawing.Size(458, 61);
             this.panel1.TabIndex = 1;
             // 
             // label2
@@ -323,7 +276,7 @@ namespace ControlDeGimnasio.Vista {
             this.tsbSalir});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(47, 573);
+            this.toolStrip1.Size = new System.Drawing.Size(47, 625);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -352,6 +305,10 @@ namespace ControlDeGimnasio.Vista {
             this.idDataGridViewTextBoxColumn1.Name = "idDataGridViewTextBoxColumn1";
             this.idDataGridViewTextBoxColumn1.ReadOnly = true;
             // 
+            // bsAparatos
+            // 
+            this.bsAparatos.DataSource = typeof(ControlDeGimnasio.Modelo.Entidades.Aparato);
+            // 
             // nombreDataGridViewTextBoxColumn
             // 
             this.nombreDataGridViewTextBoxColumn.DataPropertyName = "Nombre";
@@ -373,11 +330,54 @@ namespace ControlDeGimnasio.Vista {
             this.montoDataGridViewTextBoxColumn.Name = "montoDataGridViewTextBoxColumn";
             this.montoDataGridViewTextBoxColumn.ReadOnly = true;
             // 
+            // bsSocios
+            // 
+            this.bsSocios.DataSource = typeof(ControlDeGimnasio.Modelo.Entidades.Socio);
+            // 
+            // horaSalidaDataGridViewTextBoxColumn
+            // 
+            this.horaSalidaDataGridViewTextBoxColumn.DataPropertyName = "HoraSalida";
+            this.horaSalidaDataGridViewTextBoxColumn.HeaderText = "HoraSalida";
+            this.horaSalidaDataGridViewTextBoxColumn.Name = "horaSalidaDataGridViewTextBoxColumn";
+            this.horaSalidaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // horaEntradaDataGridViewTextBoxColumn
+            // 
+            this.horaEntradaDataGridViewTextBoxColumn.DataPropertyName = "HoraEntrada";
+            this.horaEntradaDataGridViewTextBoxColumn.HeaderText = "HoraEntrada";
+            this.horaEntradaDataGridViewTextBoxColumn.Name = "horaEntradaDataGridViewTextBoxColumn";
+            this.horaEntradaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // socioDataGridViewTextBoxColumn
+            // 
+            this.socioDataGridViewTextBoxColumn.DataPropertyName = "Socio";
+            this.socioDataGridViewTextBoxColumn.HeaderText = "Socio";
+            this.socioDataGridViewTextBoxColumn.Name = "socioDataGridViewTextBoxColumn";
+            this.socioDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // nombreSocioDataGridViewTextBoxColumn
+            // 
+            this.nombreSocioDataGridViewTextBoxColumn.DataPropertyName = "NombreSocio";
+            this.nombreSocioDataGridViewTextBoxColumn.HeaderText = "NombreSocio";
+            this.nombreSocioDataGridViewTextBoxColumn.Name = "nombreSocioDataGridViewTextBoxColumn";
+            this.nombreSocioDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // iDDataGridViewTextBoxColumn
+            // 
+            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
+            this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
+            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
+            this.iDDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // bsRegistros
+            // 
+            this.bsRegistros.DataSource = typeof(ControlDeGimnasio.Modelo.Entidades.Registro);
+            // 
             // frmReportes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(773, 573);
+            this.ClientSize = new System.Drawing.Size(521, 625);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.toolStrip1);
             this.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -391,17 +391,17 @@ namespace ControlDeGimnasio.Vista {
             this.tabPage1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvAparatos)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bsAparatos)).EndInit();
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSocios)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bsSocios)).EndInit();
             this.tabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvRegistros)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bsRegistros)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bsAparatos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsSocios)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsRegistros)).EndInit();
             this.ResumeLayout(false);
 
         }

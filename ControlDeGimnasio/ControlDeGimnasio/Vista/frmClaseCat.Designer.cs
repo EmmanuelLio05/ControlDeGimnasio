@@ -51,7 +51,7 @@ namespace ControlDeGimnasio.Vista {
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(45, 514);
+            this.panel1.Size = new System.Drawing.Size(45, 234);
             this.panel1.TabIndex = 1;
             // 
             // btnActulizar
@@ -104,7 +104,7 @@ namespace ControlDeGimnasio.Vista {
             this.dgvClases.Name = "dgvClases";
             this.dgvClases.ReadOnly = true;
             this.dgvClases.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvClases.Size = new System.Drawing.Size(491, 514);
+            this.dgvClases.Size = new System.Drawing.Size(444, 234);
             this.dgvClases.TabIndex = 2;
             // 
             // nombreDataGridViewTextBoxColumn
@@ -143,7 +143,7 @@ namespace ControlDeGimnasio.Vista {
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(536, 514);
+            this.ClientSize = new System.Drawing.Size(489, 234);
             this.Controls.Add(this.dgvClases);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

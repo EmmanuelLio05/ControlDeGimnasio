@@ -33,17 +33,18 @@ namespace ControlDeGimnasio.Vista
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmUsuarioCat));
             this.dgvUsuarios = new System.Windows.Forms.DataGridView();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnActulizar = new System.Windows.Forms.Button();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.btnRegistrar = new System.Windows.Forms.Button();
             this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.contraseñaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.profesionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.direccionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.telefonoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btnActulizar = new System.Windows.Forms.Button();
-            this.btnSalir = new System.Windows.Forms.Button();
-            this.btnRegistrar = new System.Windows.Forms.Button();
+            this.Tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -63,7 +64,8 @@ namespace ControlDeGimnasio.Vista
             this.contraseñaDataGridViewTextBoxColumn,
             this.profesionDataGridViewTextBoxColumn,
             this.direccionDataGridViewTextBoxColumn,
-            this.telefonoDataGridViewTextBoxColumn});
+            this.telefonoDataGridViewTextBoxColumn,
+            this.Tipo});
             this.dgvUsuarios.DataSource = this.bindingSource1;
             this.dgvUsuarios.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvUsuarios.Location = new System.Drawing.Point(45, 0);
@@ -71,9 +73,55 @@ namespace ControlDeGimnasio.Vista
             this.dgvUsuarios.Name = "dgvUsuarios";
             this.dgvUsuarios.ReadOnly = true;
             this.dgvUsuarios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvUsuarios.Size = new System.Drawing.Size(580, 537);
+            this.dgvUsuarios.Size = new System.Drawing.Size(771, 273);
             this.dgvUsuarios.TabIndex = 3;
             this.dgvUsuarios.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUsuarios_CellContentClick);
+            // 
+            // bindingSource1
+            // 
+            this.bindingSource1.DataSource = typeof(ControlDeGimnasio.Modelo.Entidades.Usuario);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.panel1.Controls.Add(this.btnActulizar);
+            this.panel1.Controls.Add(this.btnSalir);
+            this.panel1.Controls.Add(this.btnRegistrar);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(45, 273);
+            this.panel1.TabIndex = 0;
+            // 
+            // btnActulizar
+            // 
+            this.btnActulizar.Image = global::ControlDeGimnasio.Properties.Resources._30pencil;
+            this.btnActulizar.Location = new System.Drawing.Point(3, 54);
+            this.btnActulizar.Name = "btnActulizar";
+            this.btnActulizar.Size = new System.Drawing.Size(38, 38);
+            this.btnActulizar.TabIndex = 2;
+            this.btnActulizar.UseVisualStyleBackColor = true;
+            this.btnActulizar.Click += new System.EventHandler(this.btnActulizar_Click);
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.Image = global::ControlDeGimnasio.Properties.Resources._24close;
+            this.btnSalir.Location = new System.Drawing.Point(3, 94);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(38, 38);
+            this.btnSalir.TabIndex = 1;
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click_1);
+            // 
+            // btnRegistrar
+            // 
+            this.btnRegistrar.Image = global::ControlDeGimnasio.Properties.Resources._30plus;
+            this.btnRegistrar.Location = new System.Drawing.Point(3, 14);
+            this.btnRegistrar.Name = "btnRegistrar";
+            this.btnRegistrar.Size = new System.Drawing.Size(38, 38);
+            this.btnRegistrar.TabIndex = 0;
+            this.btnRegistrar.UseVisualStyleBackColor = true;
+            this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
             // iDDataGridViewTextBoxColumn
             // 
@@ -117,57 +165,18 @@ namespace ControlDeGimnasio.Vista
             this.telefonoDataGridViewTextBoxColumn.Name = "telefonoDataGridViewTextBoxColumn";
             this.telefonoDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // bindingSource1
+            // Tipo
             // 
-            this.bindingSource1.DataSource = typeof(ControlDeGimnasio.Modelo.Entidades.Usuario);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.panel1.Controls.Add(this.btnActulizar);
-            this.panel1.Controls.Add(this.btnSalir);
-            this.panel1.Controls.Add(this.btnRegistrar);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(45, 537);
-            this.panel1.TabIndex = 0;
-            // 
-            // btnActulizar
-            // 
-            this.btnActulizar.Image = global::ControlDeGimnasio.Properties.Resources._30pencil;
-            this.btnActulizar.Location = new System.Drawing.Point(3, 54);
-            this.btnActulizar.Name = "btnActulizar";
-            this.btnActulizar.Size = new System.Drawing.Size(38, 38);
-            this.btnActulizar.TabIndex = 2;
-            this.btnActulizar.UseVisualStyleBackColor = true;
-            this.btnActulizar.Click += new System.EventHandler(this.btnActulizar_Click);
-            // 
-            // btnSalir
-            // 
-            this.btnSalir.Image = global::ControlDeGimnasio.Properties.Resources._24close;
-            this.btnSalir.Location = new System.Drawing.Point(3, 94);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(38, 38);
-            this.btnSalir.TabIndex = 1;
-            this.btnSalir.UseVisualStyleBackColor = true;
-            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click_1);
-            // 
-            // btnRegistrar
-            // 
-            this.btnRegistrar.Image = global::ControlDeGimnasio.Properties.Resources._30plus;
-            this.btnRegistrar.Location = new System.Drawing.Point(3, 14);
-            this.btnRegistrar.Name = "btnRegistrar";
-            this.btnRegistrar.Size = new System.Drawing.Size(38, 38);
-            this.btnRegistrar.TabIndex = 0;
-            this.btnRegistrar.UseVisualStyleBackColor = true;
-            this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
+            this.Tipo.DataPropertyName = "Tipo";
+            this.Tipo.HeaderText = "Tipo";
+            this.Tipo.Name = "Tipo";
+            this.Tipo.ReadOnly = true;
             // 
             // frmUsuarioCat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(625, 537);
+            this.ClientSize = new System.Drawing.Size(816, 273);
             this.Controls.Add(this.dgvUsuarios);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -199,5 +208,6 @@ namespace ControlDeGimnasio.Vista
         private System.Windows.Forms.DataGridViewTextBoxColumn profesionDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn direccionDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn telefonoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Tipo;
     }
 }

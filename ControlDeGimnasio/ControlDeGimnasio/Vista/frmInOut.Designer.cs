@@ -28,11 +28,14 @@ namespace ControlDeGimnasio.Vista {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmInOut));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btnEntrar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.txtSocio = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dgvSociosEnGym = new System.Windows.Forms.DataGridView();
-            this.btnEntrar = new System.Windows.Forms.Button();
             this.NombreSocio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.socioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.horaEntradaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -47,6 +50,9 @@ namespace ControlDeGimnasio.Vista {
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.btnEntrar);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.txtSocio);
@@ -60,22 +66,66 @@ namespace ControlDeGimnasio.Vista {
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Entrar";
             // 
+            // label5
+            // 
+            this.label5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(14, 79);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(236, 106);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "Favor de marcar entrada y salida, para marcar su salida haga doble clic sobre su " +
+    "registro en la lista, muchas gracias!!";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(13, 283);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(116, 19);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Marcar entrada";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(13, 195);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(125, 19);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Número de socio";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // btnEntrar
+            // 
+            this.btnEntrar.BackColor = System.Drawing.Color.Transparent;
+            this.btnEntrar.Image = global::ControlDeGimnasio.Properties.Resources._150login;
+            this.btnEntrar.Location = new System.Drawing.Point(13, 306);
+            this.btnEntrar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEntrar.Name = "btnEntrar";
+            this.btnEntrar.Size = new System.Drawing.Size(158, 158);
+            this.btnEntrar.TabIndex = 2;
+            this.btnEntrar.UseVisualStyleBackColor = false;
+            this.btnEntrar.Click += new System.EventHandler(this.btnEntrar_Click);
+            // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(13, 91);
+            this.label1.Font = new System.Drawing.Font("Calibri", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(14, 23);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(236, 189);
+            this.label1.Size = new System.Drawing.Size(236, 43);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Escriba su numero de socio en el cuadro de texto y despues presione el botón de e" +
-    "ntrar para marcar su entrada.";
+            this.label1.Text = "Bienvenido ";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // txtSocio
             // 
             this.txtSocio.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSocio.Location = new System.Drawing.Point(13, 284);
+            this.txtSocio.Location = new System.Drawing.Point(13, 230);
             this.txtSocio.Margin = new System.Windows.Forms.Padding(4);
             this.txtSocio.Name = "txtSocio";
             this.txtSocio.Size = new System.Drawing.Size(237, 37);
@@ -91,7 +141,7 @@ namespace ControlDeGimnasio.Vista {
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Size = new System.Drawing.Size(479, 566);
+            this.groupBox2.Size = new System.Drawing.Size(347, 566);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Salir";
@@ -118,22 +168,10 @@ namespace ControlDeGimnasio.Vista {
             this.dgvSociosEnGym.MultiSelect = false;
             this.dgvSociosEnGym.Name = "dgvSociosEnGym";
             this.dgvSociosEnGym.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvSociosEnGym.Size = new System.Drawing.Size(471, 539);
+            this.dgvSociosEnGym.Size = new System.Drawing.Size(339, 539);
             this.dgvSociosEnGym.TabIndex = 0;
             this.dgvSociosEnGym.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentDoubleClick);
             this.dgvSociosEnGym.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSociosEnGym_CellDoubleClick);
-            // 
-            // btnEntrar
-            // 
-            this.btnEntrar.BackColor = System.Drawing.Color.Transparent;
-            this.btnEntrar.Image = global::ControlDeGimnasio.Properties.Resources._150login;
-            this.btnEntrar.Location = new System.Drawing.Point(52, 330);
-            this.btnEntrar.Margin = new System.Windows.Forms.Padding(4);
-            this.btnEntrar.Name = "btnEntrar";
-            this.btnEntrar.Size = new System.Drawing.Size(158, 158);
-            this.btnEntrar.TabIndex = 2;
-            this.btnEntrar.UseVisualStyleBackColor = false;
-            this.btnEntrar.Click += new System.EventHandler(this.btnEntrar_Click);
             // 
             // NombreSocio
             // 
@@ -181,7 +219,7 @@ namespace ControlDeGimnasio.Vista {
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(742, 566);
+            this.ClientSize = new System.Drawing.Size(610, 566);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -215,5 +253,8 @@ namespace ControlDeGimnasio.Vista {
         private System.Windows.Forms.DataGridViewTextBoxColumn horaEntradaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn horaSalidaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label5;
     }
 }
