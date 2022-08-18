@@ -126,18 +126,4 @@ namespace ControlDeGimnasio.Vista {
                 oDRegistro.Out(registro);
             }
         }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        /*
-        private void button1_Click(object sender, EventArgs e)
-        {
-            frmLogin f = new frmLogin();
-            f.ShowDialog();
-        }
-        */
-    }
 }
